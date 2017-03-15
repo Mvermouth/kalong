@@ -1,0 +1,10 @@
+<?php
+//配置文件
+$_CFG=array();
+//$_CFG['kalong']='hello';
+$_CFG['localhost']='localhost';
+$_CFG['usename']='root';
+$_CFG['password']='root';
+$_CFG['charset']='utf-8';
+$_CFG['dbname']='sword';
+?>

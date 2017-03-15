@@ -1,0 +1,73 @@
+
+ceshi
+ceshi1
+select goods_name from goods
+1
+set namesutf8
+select goods_name from goods
+1
+set namesutf8
+insert into tes values('hell','fan')
+
+set namesutf8
+insert into tes values('hell','fan')
+mysql_select_db(tes)
+set namesutf8
+insert into tes values('hell','fan')
+mysql_select_db(tes)
+set namesutf-8
+insert into tes values('hell','fan')
+mysql_select_db(tes)
+mysql_set_charset(utf-8)
+insert into tes values('hell','fan')
+
+
+insert into tes values('hellww','fanww')
+mysql_select_db(tes)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+mysql_select_db(tes)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+mysql_select_db(sword)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+mysql_select_db(sword)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+1
+
+insert into tes values('hellww','fanww')
+1
+
+insert into tes values(,)
+1
+
+insert into tes values(,)
+1
+
+insert into tes values(,)
+1
+
+insert into tes values(ee,fff)
+1
+
+insert into tes values('','')
+1
+
+insert into tes values('lll','fff')
+1
+
+insert into tes values('','')
+1
+
+insert into tes values('','')
+1
+
+insert into tes values('e\'ed\"e','q\'d\"f\"')
+1
+
+1
+
+1
+

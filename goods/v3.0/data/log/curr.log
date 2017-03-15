@@ -1,0 +1,207 @@
+
+ceshi
+ceshi1
+select goods_name from goods
+1
+set namesutf8
+select goods_name from goods
+1
+set namesutf8
+insert into tes values('hell','fan')
+
+set namesutf8
+insert into tes values('hell','fan')
+mysql_select_db(tes)
+set namesutf8
+insert into tes values('hell','fan')
+mysql_select_db(tes)
+set namesutf-8
+insert into tes values('hell','fan')
+mysql_select_db(tes)
+mysql_set_charset(utf-8)
+insert into tes values('hell','fan')
+
+
+insert into tes values('hellww','fanww')
+mysql_select_db(tes)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+mysql_select_db(tes)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+mysql_select_db(sword)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+mysql_select_db(sword)
+mysql_set_charset(utf-8)
+insert into tes values('hellww','fanww')
+1
+
+insert into tes values('hellww','fanww')
+1
+
+insert into tes values(,)
+1
+
+insert into tes values(,)
+1
+
+insert into tes values(,)
+1
+
+insert into tes values(ee,fff)
+1
+
+insert into tes values('','')
+1
+
+insert into tes values('lll','fff')
+1
+
+insert into tes values('','')
+1
+
+insert into tes values('','')
+1
+
+insert into tes values('e\'ed\"e','q\'d\"f\"')
+1
+
+1
+
+1
+
+1
+
+insertintotesvaluesnnn
+1
+
+insertintotesvalues(nnn)
+1
+
+
+1
+
+updatetesset0=mmm,1=nnn,,
+1
+
+updatetesset0=mmm,1=nnn,
+1
+
+insert into tes values(mmm,nnn,,)
+1
+
+insert into tes values(mmm,nnn,,,)
+1
+
+insert into tes values(mmm,nnn,)
+1
+
+insert into tes values(mmm,nnn)
+1
+
+insert into tes values('mmm',nnn')
+1
+
+insert into tes values('mmm','nnn',')
+1
+
+insert into tes values('mmm','nnn)
+1
+
+insert into tes values('mmm','nnn')
+1
+
+insert into tes values('mmem','nnne')
+1
+
+insert into tes('0',1') values('mmem','nnne')
+1
+
+insert into tes('t1','t2') values('hhhh','hhh')
+1
+
+insert into tes(t1,t2) values('e2e','hho2oh')
+1
+
+update tesset t1='e2e',t2='hho2oh',where t1='fan'
+1
+
+update tes set t1='e2e',t2='hho2oh'where t1='fan'
+1
+
+update tes set t1='e2e',t2='hho2oh' where t2='fan'
+1
+
+update tes set t2='good' where t2='hho2oh'
+1
+
+1
+
+1
+
+insert into tes(t1,t2) values('nogo','nood')
+1
+
+insert into tes(t1,t2) values('n1314','n224')
+1
+
+insert into tes(t1,t2) values('n13114','n224')
+1
+1
+
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+1
+
+insert into tes(t1,t2) values('n78','n298')
+1
+
+insert into tes(t1,t2) values('n711w8','n298')
+1
+
+insert into tes(t1,t2) values('cao','jiuxcao')
+1
+
+insert into cate(name,intro) values('eee','bbb')
+1
+
+insert into cate(name,intro) values('gege','bbbegeg')
+1
+
+insert into cate(name,intro) values('cwcw','fwfw')
+1
+
+insert into cate(name,intro) values('w1w1w','sd2')
+1
+
+1
+
+insert into cate(name1,intro) values('mm','sd2')
+1
+
+insert into cate(name,intro) values('mm','sd2')
+1
+
+insert into cate(name1,intro) values('mmww','sd2')
