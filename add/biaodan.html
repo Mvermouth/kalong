@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="gd3.php" method="post" >
+    
+
+    <input type="text" name="vc" ><img src="gd3.php" alt="" onclick="cha()">
+    <input type="submit" value="ok">
+</form>
+    <script>
+        function cha(){
+            var img=document.querySelector('img');
+            img.setAttribute('src','gd3.php?_s='+Math.random());
+        }
+    </script>
+</body>
+</html>
