@@ -5,6 +5,8 @@ class Model{
 	protected $db=null;
 	protected $pk=null;
 	protected $field=array();
+    protected $_valid = array();
+    protected $error = array();
 	public function __construct(){
 		$this->db=mysql::getins();
 	}
@@ -67,6 +69,89 @@ class Model{
         }
         return $data;
     }
+    /*
+       格式 $this->_valid = array(
+                   array('验证的字段名',0/1/2(验证场景),'报错提示','require/in(某几种情况)/between(范围)/length(某个范围)','参数')
+       );
+
+       array('goods_name',1,'必须有商品名','requird'),
+       array('cat_id',1,'栏目id必须是整型值','number'),
+       array('is_new',0,'in_new只能是0或1','in','0,1')
+       array('goods_breif',2,'商品简介就在10到100字符','length','10,100')
+
+   */
+    public function _validate($data) {
+        if(empty($this->_valid)) {
+            return true;
+        }
+
+        $this->error = array();
+
+        foreach($this->_valid as $k=>$v) {
+            switch($v[1]) {
+                case 1:
+                    if(!isset($data[$v[0]])) {
+                        $this->error[] = $v[2];
+                        return false;
+                    }
+
+                    if(!$this->check($data[$v[0]],$v[3])) {
+                        $this->error[] = $v[2];
+                        return false;
+                    }
+                    break;
+                case 0:
+                    if(isset($data[$v[0]])) {
+                        if(!$this->check($data[$v[0]],$v[3],$v[4])) {
+                            $this->error[] = $v[2];
+                            return false;
+                        }
+                    }
+                    break;
+                case 2:
+                    if(isset($data[$v[0]]) && !empty($data[$v[0]])) {
+                        if(!$this->check($data[$v[0]],$v[3],$v[4])) {
+                            $this->error[] = $v[2];
+                            return false;
+                        }
+                    }
+            }
+        }
+
+        return true;
+
+    }
+
+    public function getErr(){
+        return $this->error;
+    }
+
+    protected function check($value,$rule='',$parm='') {
+        switch($rule) {
+            case 'require':
+                return !empty($value);
+
+            case 'number':
+                return is_numeric($value);
+
+            case 'in':
+                $tmp = explode(',',$parm);
+                return in_array($value,$tmp);
+            case 'between':
+                list($min,$max) = explode(',',$parm);
+                return $value >= $min && $value <= $max;
+            case 'length':
+                list($min,$max) = explode(',',$parm);
+                return strlen($value) >= $min && strlen($value) <= $max;
+            case 'email':
+                // 判断$value是否是email,可以用正则表达式,但现在没学.
+                // 因此,此处用系统函数来判断
+                return (filter_var($value,FILTER_VALIDATE_EMAIL) !== false);
+            default:
+                return false;
+        }
+    }
+
 }
 //class testmodel extends Model{
 //	protected $table='tes';

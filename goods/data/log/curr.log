@@ -4852,3 +4852,72 @@ insert into user(usename,email,password,repasswd,agreement) values('7410','2131'
 
 desc user
 insert into user(usename,email,password) values('7410','123456','123456')
+1
+
+desc user
+insert into user(usename,email,password) values('4988','498801877@qq.com','qq111111')
+1
+
+desc user
+insert into user(usename,email,password,regtime) values('498801','498801877@qq.com','qq111111','1489545021')
+1
+
+desc user
+insert into user(usename,email,password,regtime) values('1','','','1489546699')
+1
+
+1
+
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+insert into user(usename,email,password,regtime) values('9630','12345@qq.com','123456','1489548447')
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+insert into user(usename,email,password,regtime) values('8520','498801877@qq.com','45101b093c4e8acf32a525dc231afd50','1489548883')
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+select count(*) from user where usename=19511
+insert into user(usename,email,password,regtime) values('19511','4982@qq.co','e10adc3949ba59abbe56e057f20f883e','1489549891')
+1
+
+desc user
+select count(*) from user where usename=19511
