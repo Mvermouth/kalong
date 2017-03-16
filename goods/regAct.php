@@ -25,8 +25,8 @@ $data['regtime']=time();
 $data['password']=$use->encPassword($_POST['password']);
 $data=$use->_facade($data);
 if(!$use->_validate($data)){
-    print_r($use->getErr());
-    $msg="用户帐号密码错误";
+    $msg=implode('<br/>',$use->getErr());
+    //$msg="用户帐号密码错误";
     include (ROOT.'./view/front/msg.html');
     exit;
 }

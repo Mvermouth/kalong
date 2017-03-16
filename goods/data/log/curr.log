@@ -4921,3 +4921,60 @@ insert into user(usename,email,password,regtime) values('19511','4982@qq.co','e1
 
 desc user
 select count(*) from user where usename=19511
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+select count(*) from user where usename=12345
+insert into user(usename,email,password,regtime) values('12345','123','fcea920f7412b5da7be0cf42b8c93759','1489629655')
+1
+
+desc user
+select count(*) from user where usename=无聊
+insert into user(usename,email,password,regtime) values('无聊','999','e10adc3949ba59abbe56e057f20f883e','1489629973')
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+select count(*) from user where usename=10975734
+insert into user(usename,email,password,regtime) values('10975734','root@qq.com','ff9830c42660c1dd1942844f8069b74a','1489630880')
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user
+1
+
+desc user

@@ -68,6 +68,9 @@
         3.怎么禁止别人看自己的信息
         4.如何才能控制只看到自己的信息
         5.cookie=狗牌
+        6.cookie可以伪造不安全
+        7.设置cookie用setcookie  读取就用$_COOKIE 超级全局数组
+        8.不设置时间关闭浏览器cookie就没了
     2.session
 
 

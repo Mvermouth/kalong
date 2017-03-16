@@ -420,6 +420,8 @@
 	 1.随机打乱 str_shuffle 
 	 2.分隔字符 explode
 	 3.basename( 获取文件名字
+	 4.filter_var 判断email
+	5.implode 将一个1唯数组转化为字符窜
 	 * 
 	 * */
 
@@ -439,6 +441,11 @@
  *      2.imagecopymerge
 imagecopymerge — 拷贝并合并图像的一部分
         3.保存
+ * */
+/*  cookie
+ * setcookie 最多5个参数
+ *
+ *
  * */
 ?>
 

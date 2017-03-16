@@ -7,8 +7,11 @@
  */
 print_r($_COOKIE);
 echo '<br/>';
-if(!$_COOKIE['user']){
-    echo '你没有权力';
-}else{
-    echo $_COOKIE['user'];
-}
+//sleep(5);
+setcookie('age','12',time()-1);
+//echo $_COOKIE['user'];
+//if(!$_COOKIE['user']){
+//    echo '你没有权力';
+//}else{
+//    echo $_COOKIE['user'];
+//}

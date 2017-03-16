@@ -14,9 +14,11 @@ class UserModel extends Model{
     protected $_valid=array(
         array('usename',1,'用户名必须存在','require'),
         array('usename',0,'用户名必须在4~16字符','length','4,16'),
-        array('email',1,'email非法','require'),
+        array('email',1,'email非法','email'),
         array('password',1,'密码不能为空','require')
     );
+
+
 
     public function encPassword($p){
         return md5($p);
@@ -26,4 +28,5 @@ class UserModel extends Model{
         $sql='select count(*) from '.$this->table.' where usename='.$name;
         return $this->db->getOne($sql);
     }
+
 }
