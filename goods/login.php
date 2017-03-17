@@ -22,10 +22,23 @@ if(isset($_POST['act'])){
         $msg='登陆成功';
         session_start();
         $_SESSION=$row;
+        if(isset($_POST['remember'])){
+            setcookie('remuser',$u,time()+48*3600);
+            //$rem=$u;
+        }else{
+            //$rem='';
+            setcookie('remuser','',0);
+        }
+        //setcookie('remuser',$rem,time()+48*3600);
         include (ROOT.'./view/front/msg.html');
     }
     exit;
 }else{
+    if(isset($_COOKIE['remuser'])){
+        $rem=$_COOKIE['remuser'];
+    }else{
+        $rem='';
+    }
     include (ROOT.'./view/front/denglu.html');
 }
 

@@ -5049,3 +5049,116 @@ select usename,password,email from user where usename='test'
 1
 
 select usename,password,email from user where usename='test'
+1
+
+desc user
+select count(*) from user where usename="4988"
+insert into user(usename,email,password,regtime) values('4988','4988@qq.com','45101b093c4e8acf32a525dc231afd50','1489752539')
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select usename,password,email from user where usename='4988'
+1
+
+select * from category
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017031758548'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('大剑','kl2017031758548','3','123','1234','','1','1','1','1','1','','','0','1489756585','data/images/20173/17/vqn091.jpg','data/images/20173/17/goods_vqn091.jpg','data/images/20173/17/thumb_vqn091.jpg')
+1
+
+select * from category
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017031765576'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('小贱','kl2017031765576','3','213','12345','','1','1','1','1','1','','','0','1489756625','data/images/20173/17/1gmc8l.png','data/images/20173/17/goods_1gmc8l.png','data/images/20173/17/thumb_1gmc8l.png')
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017031792468'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('小贱22','kl2017031792468','3','2132','123452','','1','1','1','1','1','','','0','1489756644','data/images/20173/17/f9pkn5.jpg','data/images/20173/17/goods_f9pkn5.jpg','data/images/20173/17/thumb_f9pkn5.jpg')
+1
+
+select * from category
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017031792477'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('额v','kl2017031792477','3','12','12','','2','1','1','1','1','','','0','1489756670','data/images/20173/17/ah7fwc.png','data/images/20173/17/goods_ah7fwc.png','data/images/20173/17/thumb_ah7fwc.png')
+1
+
+select * from category
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017031711938'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_new,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('哈哈','kl2017031711938','3','123','12','','1','1','1','1','','','0','1489757602','data/images/20173/17/o9gc3b.png','data/images/20173/17/goods_o9gc3b.png','data/images/20173/17/thumb_o9gc3b.png')
+1
+
+select * from goods where is_delete=0
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goodswhere is_new=1
+        order by add_time limit to 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1
+        order by add_time limit to 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time limit to 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time limit 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time limit 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time limit 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5

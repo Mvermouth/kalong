@@ -50,6 +50,12 @@ session_start();
 //}else{
 //	echo 'nonono';
 //}
+
+$goods=new goodsModel();
+$newlist=$goods->getNewlist(5);
+//print_r($res);
+
+//exit;
 include (ROOT.'./view/front/index.html');
 
 ?>

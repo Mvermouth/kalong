@@ -28,5 +28,10 @@ class goodsModel extends Model{
 	    $sql='select count(*) from '.$this->table." where goods_sn='" .$sn ."'";
 	    return $this->db->getOne($sql) ? $this->createSn():$sn;
     }
+    //得到最新商品
+    public  function  getNewlist($n=5){
+       $sql="select goods_id,goods_name,thumb_img,market_price,shop_price from ".$this->table." where is_new=1 order by add_time desc limit ".$n;
+       return $this->db->getAll($sql);
+    }
 }
 ?>
