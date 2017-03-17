@@ -24,9 +24,23 @@ class UserModel extends Model{
         return md5($p);
     }
     //检验用户名是否存在
-    public function  chenkUsename($name){
-        $sql='select count(*) from '.$this->table.' where usename='.$name;
-        return $this->db->getOne($sql);
+    public function  chenkUsename($name,$password=''){
+        if($password==''){
+            $sql='select count(*) from '.$this->table.' where usename="'.$name.'"';
+            return $this->db->getOne($sql);
+        }else{
+            $sql='select usename,password,email from '.$this->table." where usename='".$name."'";
+            $row=$this->db->getRow($sql);
+            if(empty($row)){
+                return false;
+            }
+            if($row['password']!=$this->encPassword($password)){
+                return false;
+            }
+            return $row;
+        }
+
     }
+    //检验用户+密码是否正确
 
 }

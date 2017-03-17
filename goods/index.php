@@ -1,6 +1,8 @@
 <?php
 //页面都必须先加载init.php
+define('ACC',true);
 require('./include/init.php');
+session_start();
 //Log::write('ceshi1');
 
 //class Cshi{
@@ -28,7 +30,6 @@ require('./include/init.php');
 //}else {
 //	echo 'no';
 //}
-echo '<hr/>';
 //$arr=array('t2'=>'good');
 //if($mysql->autoExecute("tes",$arr,"update","where t2='hho2oh'")){
 //	echo 'ok';
@@ -49,6 +50,6 @@ echo '<hr/>';
 //}else{
 //	echo 'nonono';
 //}
-
+include (ROOT.'./view/front/index.html');
 
 ?>

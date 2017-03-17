@@ -4978,3 +4978,74 @@ desc user
 1
 
 desc user
+1
+
+select usename,password,email from user where usename='19511'
+1
+
+select usename,password,email from user where usename='19511'
+1
+
+select usename,password,email from user where usename='19511'
+1
+
+select usename,password,email from user where usename='19511'
+1
+
+select usename,password,email from user where usename='19511'
+1
+
+select usename,password,email from user where usename='19511'
+1
+
+desc user
+select count(*) from user where usename="test"
+insert into user(usename,email,password,regtime) values('test','498801877@qq.com','45101b093c4e8acf32a525dc231afd50','1489718150')
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='root'
+1
+
+select count(*) from user where usename=""
+1
+
+select count(*) from user where usename=""
+1
+
+select usename,password,email from user where usename='root'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='root'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select usename,password,email from user where usename='test'

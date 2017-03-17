@@ -445,6 +445,11 @@ imagecopymerge — 拷贝并合并图像的一部分
 /*  cookie
  * setcookie 最多5个参数
  *
+ * session
+ * 可以当数组操作，用unset销毁或者=一个空数组
+ * session_destroy
+ * session_unset
+ *
  *
  * */
 ?>
