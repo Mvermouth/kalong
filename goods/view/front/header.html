@@ -48,12 +48,12 @@
     	<div class="nav_list f_l">
         	<ul>
             	<li><a class="curr" href="index.php">首页</a></li>
-                <li> <a href="category.php?cat_id=1">男士正装</a></li>
-                <li ><a href="category.php?cat_id=4">女士正装</a></li>
-                <li><a href="category.php?cat_id=7">正装鞋</a></li>
+                <li> <a href="category.php?cat_id=5">男士正装</a></li>
+                <li ><a href="category.php?cat_id=93">女士正装</a></li>
+                <li><a href="category.php?cat_id=96">正装鞋</a></li>
                 <li><a href="category.php?cat_id=10">配饰</a></li>
                 <li><a href="#">实体店面</a></li>
-                <li> <a href="#">断码特惠</a></li>
+                <li><a href="#">断码特惠</a></li>
                                          
             </ul>
         </div>
@@ -83,12 +83,16 @@
   <div class="search_box f_l">
         <form onsubmit="return checkSearchForm()" action="search.php" method="get" name="searchForm" id="searchForm">
         <select style="vertical-align:middle" class="txt_style_1" id="category" name="category">
-      <option value="0">所有分类</option>
-          <option value="103">待加分类2</option><option value="148">配饰</option><option value="36">&nbsp;&nbsp;&nbsp;&nbsp;领带</option><option value="147">&nbsp;&nbsp;&nbsp;&nbsp;皮带</option><option value="42">女士正装</option><option value="135">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="136">&nbsp;&nbsp;&nbsp;&nbsp;其它</option><option value="134">&nbsp;&nbsp;&nbsp;&nbsp;套装</option><option value="149">断码特惠</option><option value="66">正装租赁</option><option value="17">男士正装</option><option value="18">&nbsp;&nbsp;&nbsp;&nbsp;西装</option><option value="25">&nbsp;&nbsp;&nbsp;&nbsp;衬衫</option><option value="83">正装鞋</option><option value="84">&nbsp;&nbsp;&nbsp;&nbsp;男士皮鞋</option><option value="89">&nbsp;&nbsp;&nbsp;&nbsp;女士皮鞋</option><option value="154">商务大衣</option><option value="128">其它</option>        </select>
+            <option value="0">所有分类</option>
+            <?php foreach($catlist as $v) { ?>
+            <option value="<?php echo $v['cat_id']; ?>">
+                <?php echo str_repeat('&nbsp;&nbsp;',$v['level']),$v['cat_name']; ?></option>
+            <?php } ?>
+        </select>
         	<input type="text" style="vertical-align:middle; width:120px;" class="txt_style_search" value="" id="keyword" name="keywords"> <input type="submit" style="vertical-align:middle" value="搜索" class="btn_style_3"> &nbsp;
             
-            
-      
+
+
             </form>
         </div>
  <div style=" padding-top:0px; padding-right:5px; overflow:hidden" class="hot_keyword f_l">热门关键字：

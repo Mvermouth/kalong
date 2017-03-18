@@ -3,8 +3,8 @@
     <meta content="ECSHOP v2.7.2" name="Generator">
     <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
     <title>中意斯正装商城-职业装|面试正装|求职正装|男士正装|女士正装|正装衬衫-源于北京,服务全国</title>
-    <link href="favicon.ico" rel="shortcut icon">
-    <link type="image/gif" href="animated_favicon.gif" rel="icon">
+    <!--<link href="favicon.ico" rel="shortcut icon">-->
+    <!--<link type="image/gif" href="animated_favicon.gif" rel="icon">-->
     <link type="text/css" rel="stylesheet" href="./view/front/css/style.css">
 </head>
 <body>
@@ -134,7 +134,7 @@
     <div style="float:left;width:100%;" id="rec_best" class="shop_right_lib">
         <div class="np_index_content_part">
             <div id="itemBest" class="itemTit">
-                <div><img src="./view/front/images/catt/42.jpg"></div>
+                <div><img src="./view/front/images/newtitle.gif"></div>
                 <div class="more"><a href="#">更多请点击 &gt;&gt;</a></div>
             </div>
             <div class="blank5"></div>
@@ -173,7 +173,7 @@
                     <div class="grid">
 
 
-                        <?php foreach($felist as $g) { ?>
+                        <?php foreach($femsowrdList as $g) { ?>
                         <div class="goodsItem">
                             <div class="goodsPic">
                                 <a class="preview" href="goods.php?goods_id=<?php echo $g['goods_id']; ?>"><img
@@ -201,7 +201,7 @@
     <div style="float:left;width:100%;" id="rec_best" class="shop_right_lib">
         <div class="np_index_content_part">
             <div id="itemBest" class="itemTit">
-                <div><img src="./view/front/images/catt/17.jpg"></div>
+                <div><img src="./view/front/images/newtitle.gif"></div>
                 <div class="more"><a href="#">更多请点击 &gt;&gt;</a></div>
             </div>
             <div class="blank5"></div>
@@ -239,95 +239,39 @@
                 <div class="tabItem">
                     <div class="grid">
 
-
+                        <?php foreach($mesowrdList as $g){ ?>
                         <div class="goodsItem">
                             <div class="goodsPic">
-                                <a class="preview" href="goods.php?goods_id=315"><img
-                                        alt="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶"
-                                        src="./view/front/images/315_thumb_G_1346659439530.jpg"></a>
+                                <a class="preview" href="goods.php?goods_id=<?php echo $g['goods_id']; ?>"><img
+                                        alt="<?php echo $g['goods_name']; ?>" src="<?php echo $g['thumb_img']; ?>"></a>
                             </div>
                             <div class="goodsInfo">
-                                <div class="goodsSn"><a class="f_pname" title="两扣双开衩平驳头斜兜男士西服套装3312/纯藏青色人字纹/羊毛+涤纶"
-                                                        href="goods.php?goods_id=315">两扣双开衩平驳头斜兜男...</a></div>
-                                <span class="f_gray">市场价：</span><font class="f_market">￥1598元</font><br>
-                                中意价：<font class="f_shop">￥799元 </font>
+                                <div class="goodsSn"><a class="f_white" title="<?php echo $g['goods_name']; ?>"
+                                                        href="goods.php?goods_id=<?php echo $g['goods_id']; ?>"><?php echo mb_substr($g['goods_name'],0,12,'UTF-8'),'...'; ?></a>
+                                </div>
+
+                                <span class="f_gray">市场价：</span><font
+                                    class="f_market">￥<?php echo $g['market_price']; ?>元</font><br>
+                                中意价：<font class="f_shop">￥<?php echo $g['shop_price']; ?>元 </font>
                             </div>
                         </div>
+                    <?php } ?>
 
 
-                        <div class="goodsItem">
-                            <div class="goodsPic">
-                                <a class="preview" href="goods.php?goods_id=313"><img alt="纯羊毛一粒扣枪驳领纯黑西服套装"
-                                                                                      src="./view/front/images/313_thumb_G_1346420329070.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                                <div class="goodsSn"><a class="f_pname" title="纯羊毛一粒扣枪驳领纯黑西服套装"
-                                                        href="goods.php?goods_id=313">纯羊毛一粒扣枪驳领纯黑...</a></div>
-                                <span class="f_gray">市场价：</span><font class="f_market">￥3980元</font><br>
-                                中意价：<font class="f_shop">￥999元 </font>
-                            </div>
-                        </div>
-
-
-                        <div class="goodsItem">
-                            <div class="goodsPic">
-                                <a class="preview" href="goods.php?goods_id=317"><img
-                                        alt="两扣单开衩枪驳领修身男士西服套装ZYS900/纯深藏青色/羊毛+涤纶"
-                                        src="./view/front/images/317_thumb_G_1346661429032.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                                <div class="goodsSn"><a class="f_pname" title="两扣单开衩枪驳领修身男士西服套装ZYS900/纯深藏青色/羊毛+涤纶"
-                                                        href="goods.php?goods_id=317">两扣单开衩枪驳领修身男...</a></div>
-                                <span class="f_gray">市场价：</span><font class="f_market">￥1398元</font><br>
-                                中意价：<font class="f_shop">￥699元 </font>
-                            </div>
-                        </div>
-
-
-                        <div class="goodsItem">
-                            <div class="goodsPic">
-                                <a class="preview" href="goods.php?goods_id=318"><img
-                                        alt="两扣单开衩枪驳领修身男士西服套装ZYS6028/深藏青蓝条纹"
-                                        src="./view/front/images/318_thumb_G_1346662515966.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                                <div class="goodsSn"><a class="f_pname" title="两扣单开衩枪驳领修身男士西服套装ZYS6028/深藏青蓝条纹"
-                                                        href="goods.php?goods_id=318">两扣单开衩枪驳领修身男...</a></div>
-                                <span class="f_gray">市场价：</span><font class="f_market">￥1398元</font><br>
-                                中意价：<font class="f_shop">￥699元 </font>
-                            </div>
-                        </div>
-
-
-                        <div class="goodsItem">
-                            <div class="goodsPic">
-                                <a class="preview" href="goods.php?goods_id=316"><img
-                                        alt="两扣单开衩枪驳领斜兜男士西服套装ZW03/黑色条纹/纯羊毛"
-                                        src="./view/front/images/316_thumb_G_1346660690951.jpg"></a>
-                            </div>
-                            <div class="goodsInfo">
-                                <div class="goodsSn"><a class="f_pname" title="两扣单开衩枪驳领斜兜男士西服套装ZW03/黑色条纹/纯羊毛"
-                                                        href="goods.php?goods_id=316">两扣单开衩枪驳领斜兜男...</a></div>
-                                <span class="f_gray">市场价：</span><font class="f_market">￥2598元</font><br>
-                                中意价：<font class="f_shop">￥1299元 </font>
-                            </div>
-                        </div>
-
-
-                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="blank"></div>
+</div>
+<div class="blank"></div>
 
-    <div class="blank"></div>
+<div class="blank"></div>
 
 
-    <div class="blank"></div>
+<div class="blank"></div>
 
-    <!-- 引入尾部 -->
-    <?php include(ROOT . 'view/front/footer.html'); ?>
+<!-- 引入尾部 -->
+<?php include(ROOT . 'view/front/footer.html'); ?>
 
 </body>
 </html>

@@ -3,6 +3,7 @@
 define('ACC',true);
 require('./include/init.php');
 session_start();
+header("Content-type: text/html; charset=utf8");
 //Log::write('ceshi1');
 
 //class Cshi{
@@ -54,6 +55,12 @@ session_start();
 $goods=new goodsModel();
 $newlist=$goods->getNewlist(5);
 //print_r($res);
+$femsowrd=93;
+$mesword=96;
+$femsowrdList=$goods->getTarget($femsowrd);
+$mesowrdList=$goods->getTarget($mesword);
+$cat=new catModel();
+$catlist=$cat->getcatTree($cat->select(),0,0);
 
 //exit;
 include (ROOT.'./view/front/index.html');

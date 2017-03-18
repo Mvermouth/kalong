@@ -33,5 +33,26 @@ class goodsModel extends Model{
        $sql="select goods_id,goods_name,thumb_img,market_price,shop_price from ".$this->table." where is_new=1 order by add_time desc limit ".$n;
        return $this->db->getAll($sql);
     }
+    //指定栏目商品
+    public function getTarget($cat_id){
+        $cate=new catModel();
+        $goodsAll=$cate->select();
+        $sons=$cate->getcatTree($goodsAll,$cat_id);
+        $tree=array($cat_id);
+        if(!empty($sons)){
+            foreach ($sons as $v){
+                $tree[]=$v['cat_id'];
+            }
+        }
+        $tree=implode(',',$tree);
+        $sql="select goods_id,goods_name,thumb_img,market_price,shop_price from ".$this->table." where cat_id in(".$tree.") order by add_time desc limit 5";
+        $res=$this->db->getAll($sql);
+        return $res;
+    }
+    //找爸爸
+    public function getDad($goods_id){
+        $sql='select cat_id from '.$this->table." where goods_id=".$goods_id;
+        return $this->db->getOne($sql);
+    }
 }
 ?>
