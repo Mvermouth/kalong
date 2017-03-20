@@ -6340,3 +6340,286 @@ select * from category
 select * from goods where goods_id=36
 select cat_id from goods where goods_id=36
 select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=49
+select cat_id from goods where goods_id=49
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=95
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(95) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=97
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(97) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+1
+
+select * from category
+select * from category where cat_id=97
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(97) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=95
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(95) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=43
+select cat_id from goods where goods_id=43
+select * from category
+1
+
+select * from category
+select * from category where cat_id=93
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=42
+select cat_id from goods where goods_id=42
+select * from category
+1
+
+select * from category
+select * from category where cat_id=93
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=93
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=40
+select cat_id from goods where goods_id=40
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=37
+select cat_id from goods where goods_id=37
+select * from category
+1
+
+select * from category
+select * from category where cat_id=10
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select usename,password,email from user where usename='test'
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=49
+select cat_id from goods where goods_id=49
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=37
+select cat_id from goods where goods_id=37
+select * from category
+1
+
+select * from goods where goods_id=37
+select cat_id from goods where goods_id=37
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=41
+select cat_id from goods where goods_id=41
+select * from category
+select * from category
+1
+
+select * from category
+select * from category where cat_id=93
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=93
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=96
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=48
+select cat_id from goods where goods_id=48
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=48
+select cat_id from goods where goods_id=48
+select * from category
+select * from category
