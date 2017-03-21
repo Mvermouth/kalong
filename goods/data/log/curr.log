@@ -6639,3 +6639,11 @@ select goods_id,goods_name,thumb_img,market_price,shop_price from goods where ca
 select * from category
 select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96) order by add_time desc limit 5
 select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
