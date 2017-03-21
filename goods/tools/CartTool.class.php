@@ -40,6 +40,12 @@ class CartTool{
     }
     //添加商品
     public function upCart($id,$goods_name,$shop_price,$num=1){
+        if($this->haveitem($id)){
+            $this->incNum($id,$num);
+            return;
+        }
+
+
         $item=array();
         $item['name']=$goods_name;
         $item['price']=$shop_price;
@@ -55,15 +61,15 @@ class CartTool{
         $this->items[$id]['num']=$num;
     }
     //商品数量增加一
-    public function incNum($id){
+    public function incNum($id,$num=1){
         if($this->haveitem($id)){
-            $this->items[$id]['num']+=1;
+            $this->items[$id]['num']+=$num;
         }
     }
     //-1
-    public function incNum($id){
+    public function reduceNum($id,$num=1){
         if($this->haveitem($id)){
-            $this->items[$id]['num']-=1;
+            $this->items[$id]['num']-=$num;
         }
         //if is 0 从购物车删除
         if($this->items[$id]['num']<1){
@@ -88,6 +94,32 @@ class CartTool{
     public function getInt(){
         return count($this->items);
     }
+    //计算多少个商品
+    public function getNum(){
+        if($this->getInt()==0){
+            return 0;
+        }
+        $sum=0;
+        foreach($this->items as $v){
+            $sum += $v['num'];
+        }
+        return $sum;
+    }
+    //计算一共多少钱
+    public function getMon(){
+        if($this->getNum()==0){
+            return 0;
+        }
+        $mon=0.0;
+        foreach($this->items as $v){
+            $mon+=$v['price']*$v['num'];
+        }
+        return $mon;
+    }
+    //返回all购物物品名字
+    public function getAllGoods(){
+        return $this->items;
+    }
 
     //清空购物车
     public function clear(){
@@ -99,10 +131,20 @@ class CartTool{
 //print_r(CartTool::getCart());
 $car=CartTool::getCart();
 if($_GET['test']=='add'){
-    $car->upCart(1,'kk',23.4,1);
+    $car->upCart(1,'kggk',3.4,14);
     echo 'ok';
 }else if($_GET['test']=='cle'){
     $car->clear();
+}else if($_GET['test']=='show'){
+    print_r($car->getAllGoods());
+    echo "<hr/>";
+    echo $car->getNum();
+    echo "<hr/>";
+    echo $car->getMon();
+    echo "<hr/>";
+    echo $car->getInt();
+
+
 }else{
     print_r($car);
 }
