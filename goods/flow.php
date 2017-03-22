@@ -22,6 +22,8 @@ $act = isset($_GET['act']) ? $_GET['act'] : 'buy';
 //事例工具
 $cart=CartTool::getCart();
 $goods=new goodsModel();
+$allItems=$cart->getAllGoods();
+
 if($act=='buy'){//我认为你想买东西
     $goods_id = isset($_GET['goods_id']) ? $_GET['goods_id']+0 : 0;
     $num = isset($_GET['num']) ? $_GET['num'] : 1;
@@ -32,23 +34,27 @@ if($act=='buy'){//我认为你想买东西
         if(!empty($g)){
             $cart->upCart($goods_id,$g['goods_name'],$g['shop_price'],$num);
         }
-//       if($cart->upCart($goods_id,$g['goods_name'],$g['shop_price'],$num)){
-//                echo 'ok';
-//               print_r($cart->getAllGoods());
-//                echo "<hr/>";
-//                echo $cart->getNum();
-//                echo "<hr/>";
-//                echo $cart->getMon();
-//                echo "<hr/>";
-//                echo $cart->getInt();
-//       }else{
-//           echo 'no';
-//           echo "<hr/>";
-//           print_r($cart);
-//       }
+        //如果已经下家
+        if($g['is_delete']==1||$g['is_on_sale']==0){
+            $msg="这个商品不能购买";
+            include (ROOT.'./view/front/msg.html');
+            exit;
+        }
+
+        //如果库存不够
+        if($g['goods_number'] < $allItems[$goods_id]['num']){
+            $cart->reduceNum($goods_id,$num);
+            $msg='库存不够拉';
+            include (ROOT.'./view/front/msg.html');
+            exit;
+        }
+
 
     }
     print_r($allItems=$cart->getAllGoods());
+    if(empty($allItems)){
+        header('location:index.php');
+    }
     echo "<hr/>";
     print_r($items=$goods->getCartGoods($allItems));
 //    print_r($item=$goods->getCartGoods($allItems));
@@ -73,7 +79,7 @@ if($act=='buy'){//我认为你想买东西
     print_r($total=$cart->getMon());
     $market_total=0;
     foreach ($items as $v){
-        $market_total+=$v['market_price'];
+        $market_total+=$v['market_price']*$v['num'];
     }
     echo "<hr/>";
     print_r($market_total);
@@ -82,6 +88,11 @@ if($act=='buy'){//我认为你想买东西
     //$total=array_sum($allItems['price']);
     //exit;
     include (ROOT.'./view/front/jiesuan.html');
+    exit;
+}else if($_GET['act']=='clear'){
+    $cart->clearCart();
+    $msg='已经清空';
+    include (ROOT.'./view/front/msg.html');
     exit;
 }
 //echo "<hr/>";

@@ -122,7 +122,7 @@ class CartTool{
     }
 
     //清空购物车
-    public function clear(){
+    public function clearCart(){
         //$_SESSION['cart']=array();
         $this->items=array();
     }
