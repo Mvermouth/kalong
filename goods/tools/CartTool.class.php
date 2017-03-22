@@ -129,22 +129,22 @@ class CartTool{
 }
 //CartTool::upCart(1,'kk',23.4,1);
 //print_r(CartTool::getCart());
-$car=CartTool::getCart();
-if($_GET['test']=='add'){
-    $car->upCart(1,'kggk',3.4,14);
-    echo 'ok';
-}else if($_GET['test']=='cle'){
-    $car->clear();
-}else if($_GET['test']=='show'){
-    print_r($car->getAllGoods());
-    echo "<hr/>";
-    echo $car->getNum();
-    echo "<hr/>";
-    echo $car->getMon();
-    echo "<hr/>";
-    echo $car->getInt();
-
-
-}else{
-    print_r($car);
-}
+//$car=CartTool::getCart();
+//if($_GET['test']=='add'){
+//    $car->upCart(1,'kggk',3.4,14);
+//    echo 'ok';
+//}else if($_GET['test']=='cle'){
+//    $car->clear();
+//}else if($_GET['test']=='show'){
+//    print_r($car->getAllGoods());
+//    echo "<hr/>";
+//    echo $car->getNum();
+//    echo "<hr/>";
+//    echo $car->getMon();
+//    echo "<hr/>";
+//    echo $car->getInt();
+//
+//
+//}else{
+//    print_r($car);
+//}

@@ -54,5 +54,23 @@ class goodsModel extends Model{
         $sql='select cat_id from '.$this->table." where goods_id=".$goods_id;
         return $this->db->getOne($sql);
     }
+    //获取购物车中商品的详细信息
+    //params array $items
+    public function getCartGoods($items){
+//        $ids=array();
+       foreach ($items as $k=>$v){
+           $sql="select * from ".$this->table." where goods_id = ".$k;
+           $row=$this->db->getRow($sql);
+           $items[$k]['market_price']=$row['market_price'];
+           $items[$k]['thumb_img']=$row['thumb_img'];
+           $items[$k]['shop_price']=$row['shop_price'];
+           $items[$k]['goods_name']=$row['goods_name'];
+       }
+       return $items;
+       //$ids=array_keys($items);
+//       $sql="select * from ".$this->table." where goods_id in (".implode(',',$ids).")";
+//        return $this->db->getAll($sql);
+
+    }
 }
 ?>
