@@ -66,7 +66,7 @@ building varchar(50) not null default '',
 best_time varchar(10)  not null default '',
 add_time int unsigned not null default 0,
 order_money decimal(10,2) not null default 0.0,
-pay tinyint(1)  not null default 0，
+pay tinyint(1) not null default 0,
 use_id int(10) unsigned not null default 0,
 usename varchar(10) not null default ''
 )engine=innodb character set utf8;

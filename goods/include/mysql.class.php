@@ -132,6 +132,10 @@ class mysql extends db{
 	public function affect_rows(){
 		return mysql_affected_rows($this->conn);
 	}
+	//返回自增长的值
+    public function insert_id(){
+	    return mysql_insert_id($this->conn);
+    }
 }
 
 

@@ -155,7 +155,10 @@ class Model{
                 return false;
         }
     }
-
+    //返回id
+    public function insert_id(){
+        return $this->db->insert_id();
+    }
 }
 //class testmodel extends Model{
 //	protected $table='tes';

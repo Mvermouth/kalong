@@ -17,5 +17,9 @@ class OiModel extends Model{
         array('email',1,'email非法','email')
         //array('password',1,'密码不能为空','require')
     );
-
+    public function getOrderSn(){
+        $sn='oi'.date('Ymd').mt_rand(10000,99999);
+        $sql='select count(*) from '.$this->table." where order_sn='" .$sn ."'";
+        return $this->db->getOne($sql) ? $this->createSn():$sn;
+    }
 }

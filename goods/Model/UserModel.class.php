@@ -29,7 +29,7 @@ class UserModel extends Model{
             $sql='select count(*) from '.$this->table.' where usename="'.$name.'"';
             return $this->db->getOne($sql);
         }else{
-            $sql='select usename,password,email from '.$this->table." where usename='".$name."'";
+            $sql='select usename,password,email,use_id from '.$this->table." where usename='".$name."'";
             $row=$this->db->getRow($sql);
             if(empty($row)){
                 return false;

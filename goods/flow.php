@@ -103,6 +103,14 @@ if($act=='buy'){//我认为你想买东西
         include (ROOT.'./view/front/msg.html');
         exit;
     }
+    //写入总金额
+    $data['order_money']=$cart->getMon();
+    //写入order_sn
+    $order_sn=$oi->getOrderSn();
+    $data['order_sn']=$order_sn;
+    //用户名写入
+    $data['use_id']=isset($_SESSION['use_id']) ? $_SESSION['use_id'] :0;
+    $data['usename']=isset($_SESSION['usename']) ? $_SESSION['usename'] :0;
     //商品过虐
     $oi->getdesc();
     $res=$oi->_facade($data);
@@ -111,6 +119,22 @@ if($act=='buy'){//我认为你想买东西
         include (ROOT.'./view/front/msg.html');
         exit;
     }
-    echo '写入陈功';
+    $order_id=$oi->insert_id();
+    echo '写入1陈功';
+    //写入详细商品表
+    $allItems=$cart->getAllGoods();//得到所有商品
+    foreach($allItems as $k=>$v){
+        $data=array();
+        $data['order_id']=$order_id;
+        $data['order_sn']=$order_sn;
+        $data['goods_name']=$v['name'];
+        $data['goods_id']=$k;
+        $data['goods_number']=$v['num'];
+        $data['shop_price']=$v['price'];
+        $data['subtotal']=$v['num']*$v['price'];
+        print_r($data);
+        echo '<hr/>';
+    }
+
     exit;
 }
