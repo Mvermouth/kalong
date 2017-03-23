@@ -46,3 +46,39 @@ email varchar(40) not null default '',
 regtime int unsigned not null default 0,
 lastlogin int unsigned not null default 0
 )engine=innodb character set utf8;
+
+
+商品表 1对多
+一个订单表  一个订单详细表
+订单表
+商品id 序列号 邮编 详细地址 城市 接收人 email tel号码 mob号码 标志性建筑 最佳送货时间 订单时间 金额 支付方式
+create table orderinfo(
+order_id int unsigned auto_increment primary key,
+order_sn varchar(15) not null default '',
+zipcode  char(6) not null default '',
+adress varchar(50) not null default '',
+city varchar(50) not null default '',
+reciver varchar(30) not null default '',
+email varchar(50) not null default '',
+tel varchar(20) not null default '',
+mobile varchar(20) not null default '',
+building varchar(50) not null default '',
+best_time varchar(10)  not null default '',
+add_time int unsigned not null default 0,
+order_money decimal(10,2) not null default 0.0,
+pay tinyint(1)  not null default 0，
+use_id int(10) unsigned not null default 0,
+usename varchar(10) not null default ''
+)engine=innodb character set utf8;
+订单详细表
+create table ordergoods(
+og_id int unsigned auto_increment primary key,
+order_id int unsigned not null default 0,
+order_sn varchar(15) not null default '',
+goods_name varchar(30) not null default '',
+goods_id int(10) unsigned not null default 0,
+goods_number smallint unsigned not null default 1,
+shop_price decimal(10,2) not null default 0.0,
+subtotal decimal(10,2) not null default 0.0
+)engine=innodb character set utf8;
+

@@ -72,6 +72,10 @@
         7.设置cookie用setcookie  读取就用$_COOKIE 超级全局数组
         8.不设置时间关闭浏览器cookie就没了
     2.session
+10.订单入库
+    1.产生了几个订单
+    2.各有几件商品
+    3.orderinfo 一行  ordergoods N行
 
 
 

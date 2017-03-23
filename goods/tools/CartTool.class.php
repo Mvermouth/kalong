@@ -81,6 +81,10 @@ class CartTool{
     public function delItem($id){
         unset($this->items[$id]);
     }
+    //设置商品超过库存，就为最大值
+    public function itemMax($id,$num){
+        $this->items[$id]['num']=$num;
+    }
 
 
 

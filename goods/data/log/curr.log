@@ -7569,3 +7569,593 @@ select * from goods where goods_id = 15
 
 select * from goods where goods_id = 12
 select * from goods where goods_id = 15
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=44
+select cat_id from goods where goods_id=44
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=44
+select * from goods where goods_id = 44
+1
+
+1
+
+select * from goods where goods_id = 44
+1
+
+1
+
+select * from goods where goods_id = 44
+1
+
+1
+
+select * from goods where goods_id = 44
+1
+
+select * from goods where goods_id = 44
+1
+
+select * from goods where goods_id = 44
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=45
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id=45
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=45
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+select * from category
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=45
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=45
+select cat_id from goods where goods_id=45
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=44
+select cat_id from goods where goods_id=44
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=44
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id=44
+1
+
+select * from goods where goods_id=44
+select cat_id from goods where goods_id=44
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=44
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id=44
+select cat_id from goods where goods_id=44
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=44
+1
+
+select * from goods where goods_id=44
+select cat_id from goods where goods_id=44
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=44
+select cat_id from goods where goods_id=44
+select * from category
+select * from category
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+1
+
+1
+
+1
+
+select * from goods where goods_id=49
+select cat_id from goods where goods_id=49
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=49
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+desc orderinfo
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+desc orderinfo
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+desc orderinfo
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+desc orderinfo
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49
+1
+
+desc orderinfo
+insert into orderinfo(city,reciver,email,zipcode,tel,mobile,building,best_time,pay,add_time) values('亚洲','张云轩','1@qq.com','528500','1988','13926','拉沙','白天','4','1490255462')
+1
+
+select * from goods where goods_id = 44
+select * from goods where goods_id = 45
+select * from goods where goods_id = 49

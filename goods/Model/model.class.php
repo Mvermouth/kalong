@@ -95,7 +95,11 @@ class Model{
                         return false;
                     }
 
-                    if(!$this->check($data[$v[0]],$v[3])) {
+                    if(!isset($v[4])){
+                        $v[4]='';
+                    }
+
+                    if(!$this->check($data[$v[0]],$v[3],$v[4])) {
                         $this->error[] = $v[2];
                         return false;
                     }

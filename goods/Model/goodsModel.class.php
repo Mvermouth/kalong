@@ -65,6 +65,7 @@ class goodsModel extends Model{
            $items[$k]['thumb_img']=$row['thumb_img'];
            $items[$k]['shop_price']=$row['shop_price'];
            $items[$k]['goods_name']=$row['goods_name'];
+           $items[$k]['goods_id']=$row['goods_id'];
        }
        return $items;
        //$ids=array_keys($items);

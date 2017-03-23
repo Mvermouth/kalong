@@ -43,49 +43,27 @@ if($act=='buy'){//我认为你想买东西
 
         //如果库存不够
         if($g['goods_number'] < $allItems[$goods_id]['num']){
-            $cart->reduceNum($goods_id,$num);
+            $cart->itemMax($goods_id,$g['goods_number']);
             $msg='库存不够拉';
             include (ROOT.'./view/front/msg.html');
             exit;
         }
 
-
     }
-    print_r($allItems=$cart->getAllGoods());
+    $allItems=$cart->getAllGoods();
     if(empty($allItems)){
         header('location:index.php');
     }
-    echo "<hr/>";
-    print_r($items=$goods->getCartGoods($allItems));
-//    print_r($item=$goods->getCartGoods($allItems));
-//    foreach ($allItems as $k=>$v){
-//       foreach ($item as $kk=>$vv){
-//           if($k==$vv['goods_id']){
-//               $allItems[$k]+=$vv;
-//           }
-//       }
-//    }
-    echo "<hr/>";
-//    print_r($allItems);
-//    foreach ($items as $k=>$v){
-//        foreach ($allItems as $kk=>$vv){
-//            if($kk==$v['goods_id']){
-//                $items[$k]+=$vv['num'];
-//           }
-//        }
-//    }
-    //print_r($items);
-    echo "<hr/>";
-    print_r($total=$cart->getMon());
+    //得到商品信息
+    $items=$goods->getCartGoods($allItems);
+
+    //价格
+    $total=$cart->getMon();
     $market_total=0;
     foreach ($items as $v){
         $market_total+=$v['market_price']*$v['num'];
     }
-    echo "<hr/>";
-    print_r($market_total);
     $discount=$market_total-$total;
-    //print_r($allItems['price']);
-    //$total=array_sum($allItems['price']);
     //exit;
     include (ROOT.'./view/front/jiesuan.html');
     exit;
@@ -94,16 +72,45 @@ if($act=='buy'){//我认为你想买东西
     $msg='已经清空';
     include (ROOT.'./view/front/msg.html');
     exit;
+}else if($_GET['act']=='tijiao'){
+    $allItems=$cart->getAllGoods();
+    if(empty($allItems)){
+        header('location:index.php');
+    }
+    //得到商品信息
+    $items=$goods->getCartGoods($allItems);
+    //print_r($items);
+    //价格
+    $total=$cart->getMon();
+    $market_total=0;
+    foreach ($items as $v){
+        $market_total+=$v['market_price']*$v['num'];
+    }
+    $discount=$market_total-$total;
+    include (ROOT.'./view/front/tijiao.html');
+    exit;
+}else if($act=='done'){//important
+    //从表单读取送货地址，手机等信息
+    //从购物车读取商品信息         然后gezi写入各表
+    //
+    //print_r($_POST);
+    $data=$_POST;
+    //写入时间
+    $data['add_time']=time();
+    $oi=new OiModel();
+    if(!$oi->_validate($data)){//验证信息是否合法
+        $msg=implode(',',$oi->getErr());
+        include (ROOT.'./view/front/msg.html');
+        exit;
+    }
+    //商品过虐
+    $oi->getdesc();
+    $res=$oi->_facade($data);
+    if(!$oi->add($res)){
+        $msg='写入失败';
+        include (ROOT.'./view/front/msg.html');
+        exit;
+    }
+    echo '写入陈功';
+    exit;
 }
-//echo "<hr/>";
-//print_r($cart->getAllGoods());
-//echo "<hr/>";
-//echo $cart->getNum();
-//echo "<hr/>";
-//echo $cart->getMon();
-//echo "<hr/>";
-//echo $cart->getInt();
-
-
-
-//include (ROOT.'./view/front/jiesuan.html');
