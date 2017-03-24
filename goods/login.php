@@ -9,6 +9,8 @@
 define('ACC',true);
 require ('./include/init.php');
 header("Content-type: text/html; charset=utf8");
+$cat=new catModel();
+$catlist=$cat->getcatTree($cat->select(),0,0);
 if(isset($_POST['act'])){
     $u=$_POST['usename'];
     $p=$_POST['password'];

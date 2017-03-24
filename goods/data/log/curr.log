@@ -8534,3 +8534,823 @@ select * from goods where goods_id = 17
 select count(*) from orderinfo where order_sn='oi2017032372209'
 desc orderinfo
 insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('玛丽来','张国统','11@qq.com','','','','','','','4','1490274512','24','oi2017032372209','2','4988')
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=47
+select cat_id from goods where goods_id=47
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select usename,password,email,use_id from user where usename='test'
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=47
+select cat_id from goods where goods_id=47
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=47
+select * from goods where goods_id = 47
+1
+
+select * from goods where goods_id = 47
+1
+
+select count(*) from orderinfo where order_sn='oi2017032420986'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('越南','张家辉','1@qq.com','','','','','','','4','1490320885','4','oi2017032420986','10','test')
+1
+
+select * from goods where goods_id = 47
+1
+
+select * from goods where goods_id=47
+select * from goods where goods_id = 47
+1
+
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=41
+select cat_id from goods where goods_id=41
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=41
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select count(*) from orderinfo where order_sn='oi2017032493161'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('孟家卡拉','岳云鹏','1@qq.com','','','','','','','4','1490324775','46','oi2017032493161','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('3','oi2017032493161','纵横3','46','1','1.00','1')
+update goods set goods_number = goods_number - 1 where goods_id = 46
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('3','oi2017032493161','越女3','41','1','45.00','45')
+update goods set goods_number = goods_number - 1 where goods_id = 41
+delete from orderinfo where order_id=3
+delete from ordergoods where order_id = 3
+1
+
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032439011'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('罗西','黄飞鸿','1@qq.com','','','','','罗西大宅','','4','1490325370','1','oi2017032439011','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('4','oi2017032439011','纵横3','46','1','1.00','1')
+update goods set goods_number = goods_number - 1 where goods_id = 46
+delete from orderinfo where order_id=4
+delete from ordergoods where order_id = 4
+1
+
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032421570'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('门口','囖肯定','1@qq.com','','','','','','','4','1490325495','1','oi2017032421570','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('5','oi2017032421570','纵横3','46','1','1.00','1')
+update goods set goods_number = goods_number - 1 where goods_id = 46
+delete from orderinfo where order_id=5
+delete from ordergoods where order_id = 5
+1
+
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032449580'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('云南','霍英东','1@qq.com','','','','','','','4','1490325804','3','oi2017032449580','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('6','oi2017032449580','纵横3','46','3','1.00','3')
+update goods set goods_number = goods_number - 3 where goods_id = 46
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=41
+select cat_id from goods where goods_id=41
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=41
+select * from goods where goods_id = 41
+1
+
+select * from goods where goods_id=41
+select cat_id from goods where goods_id=41
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 41
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id = 41
+select * from goods where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032481014'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('佛山','张国荣','1@qq.com','佛山高明','528500','135','13533','横城广场','深夜','4','1490325992','46','oi2017032481014','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('7','oi2017032481014','越女3','41','1','45.00','45')
+update goods set goods_number = goods_number - 1 where goods_id = 41
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('7','oi2017032481014','纵横3','46','1','1.00','1')
+update goods set goods_number = goods_number - 1 where goods_id = 46
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=43
+select cat_id from goods where goods_id=43
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032421991'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('夜幕','刘亦菲','1@qq.com','香港','852022','1325','953341','紫色花','深夜','4','1490336612','1','oi2017032421991','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('8','oi2017032421991','纵横3','46','1','1.00','1')
+update goods set goods_number = goods_number - 1 where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032410809'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('夜幕','刘亦菲','1@qq.com','香港','852022','1325','953341','紫色花','深夜','4','1490336910','0','oi2017032410809','10','test')
+1
+
+select count(*) from orderinfo where order_sn='oi2017032442752'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('夜幕','刘亦菲','1@qq.com','香港','852022','1325','953341','紫色花','深夜','4','1490336974','0','oi2017032442752','10','test')
+1
+
+select count(*) from orderinfo where order_sn='oi2017032424791'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('夜幕','刘亦菲','1@qq.com','香港','852022','1325','953341','紫色花','深夜','4','1490337107','0','oi2017032424791','10','test')
+1
+
+select count(*) from orderinfo where order_sn='oi2017032499320'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('夜幕','刘亦菲','1@qq.com','香港','852022','1325','953341','紫色花','深夜','4','1490337126','0','oi2017032499320','10','test')
+1
+
+select count(*) from orderinfo where order_sn='oi2017032481313'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('夜幕','刘亦菲','1@qq.com','香港','852022','1325','953341','紫色花','深夜','4','1490337156','0','oi2017032481313','10','test')
+1
+
+select count(*) from orderinfo where order_sn='oi2017032435261'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('夜幕','刘亦菲','1@qq.com','香港','852022','1325','953341','紫色花','深夜','4','1490337165','0','oi2017032435261','10','test')
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select * from goods where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032495677'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('电灯胆','电灯胆','1@qq.com','','','','','','','4','1490337199','1','oi2017032495677','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('15','oi2017032495677','纵横3','46','1','1.00','1')
+update goods set goods_number = goods_number - 1 where goods_id = 46
+1
+
+select count(*) from orderinfo where order_sn='oi2017032439623'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('电灯胆','电灯胆','1@qq.com','','','','','','','4','1490338449','0','oi2017032439623','10','test')
+select * from category
+1
+
+select * from category
+select count(*) from orderinfo where order_sn='oi2017032421765'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('电灯胆','电灯胆','1@qq.com','','','','','','','4','1490338606','0','oi2017032421765','10','test')
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=46
+select cat_id from goods where goods_id=46
+select * from category
+select * from category
+1
+
+select * from category
+select * from goods where goods_id=46
+select * from goods where goods_id = 46
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=41
+select cat_id from goods where goods_id=41
+select * from category
+select * from category
+1
+
+select * from category
+select * from goods where goods_id=41
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=96
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select * from category
+select * from goods where goods_id = 46
+select * from goods where goods_id = 41
+1
+
+select * from category
+select count(*) from orderinfo where order_sn='oi2017032429138'
+desc orderinfo
+insert into orderinfo(city,reciver,email,adress,zipcode,tel,mobile,building,best_time,pay,add_time,order_money,order_sn,use_id,usename) values('泰国','刘德成','1@qq.com','','','','','','','4','1490341867','46','oi2017032429138','10','test')
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('18','oi2017032429138','纵横3','46','1','1.00','1')
+update goods set goods_number = goods_number - 1 where goods_id = 46
+insert into ordergoods(order_id,order_sn,goods_name,goods_id,goods_number,shop_price,subtotal) values('18','oi2017032429138','越女3','41','1','45.00','45')
+update goods set goods_number = goods_number - 1 where goods_id = 41
+1
+
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=49
+select cat_id from goods where goods_id=49
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 5
+select * from category
+1
+
+select * from goods where goods_id=43
+select cat_id from goods where goods_id=43
+select * from category
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 5
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 0,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 0,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 2,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 0,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 4,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 6,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 2,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 0,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 0,2
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit ,
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit ,
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit ,
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit ,
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 0,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=5
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(5,7,92) order by add_time desc limit 2,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=95
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(95) order by add_time desc limit 0,2
+select * from category
+1
+
+select * from category
+select * from category where cat_id=95
+select * from category
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(95) order by add_time desc limit 0,2
+select * from category

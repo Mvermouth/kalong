@@ -23,6 +23,8 @@ $act = isset($_GET['act']) ? $_GET['act'] : 'buy';
 $cart=CartTool::getCart();
 $goods=new goodsModel();
 $allItems=$cart->getAllGoods();
+$cat=new catModel();
+$catlist=$cat->getcatTree($cat->select(),0,0);
 
 if($act=='buy'){//我认为你想买东西
     $goods_id = isset($_GET['goods_id']) ? $_GET['goods_id']+0 : 0;
@@ -105,6 +107,7 @@ if($act=='buy'){//我认为你想买东西
     }
     //写入总金额
     $data['order_money']=$cart->getMon();
+    $order_money=$cart->getMon();
     //写入order_sn
     $order_sn=$oi->getOrderSn();
     $data['order_sn']=$order_sn;
@@ -120,11 +123,16 @@ if($act=='buy'){//我认为你想买东西
         exit;
     }
     $order_id=$oi->insert_id();
-    echo '写入1陈功';
+   //echo '写入1陈功';
     //写入详细商品表
     $allItems=$cart->getAllGoods();//得到所有商品
+    $og=new OgModel();
+    $cnt=0;
     foreach($allItems as $k=>$v){
         $data=array();
+
+
+
         $data['order_id']=$order_id;
         $data['order_sn']=$order_sn;
         $data['goods_name']=$v['name'];
@@ -132,9 +140,32 @@ if($act=='buy'){//我认为你想买东西
         $data['goods_number']=$v['num'];
         $data['shop_price']=$v['price'];
         $data['subtotal']=$v['num']*$v['price'];
-        print_r($data);
-        echo '<hr/>';
-    }
+//        print_r($data);
+//        echo '<hr/>';
+//        echo '<hr/>';
+//        echo '<hr/>';
+        if($og->addOg($data)){
+            $cnt++;
+        }
 
+
+        //商品数量减少 库存要清空
+    }
+//    echo '<hr/>';
+//    echo $cnt;
+//    echo '<hr/>';
+//    echo count($allItems);
+//    echo '<hr/>';
+    if($cnt!==count($allItems)){//如果不是全部成功就撤销订单
+        $oi->invoke($order_id);
+        $msg="订单入库失败";
+        include (ROOT.'./view/front/msg.html');
+        exit;
+    }
+    $cart->clearCart();
+    //$msg="订单写入陈功";
+//    $cat=new catModel();
+//    $catlist=$cat->getcatTree($cat->select(),0,0);
+    include (ROOT.'./view/front/order.html');
     exit;
 }

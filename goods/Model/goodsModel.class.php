@@ -34,7 +34,7 @@ class goodsModel extends Model{
        return $this->db->getAll($sql);
     }
     //指定栏目商品
-    public function getTarget($cat_id){
+    public function getTarget($cat_id,$offer='',$perpage=''){
         $cate=new catModel();
         $goodsAll=$cate->select();
         $sons=$cate->getcatTree($goodsAll,$cat_id);
@@ -45,7 +45,7 @@ class goodsModel extends Model{
             }
         }
         $tree=implode(',',$tree);
-        $sql="select goods_id,goods_name,thumb_img,market_price,shop_price from ".$this->table." where cat_id in(".$tree.") order by add_time desc limit 5";
+        $sql="select goods_id,goods_name,thumb_img,market_price,shop_price from ".$this->table." where cat_id in(".$tree.") order by add_time desc limit ".$offer.",".$perpage;
         $res=$this->db->getAll($sql);
         return $res;
     }

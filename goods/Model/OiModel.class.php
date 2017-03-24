@@ -22,4 +22,10 @@ class OiModel extends Model{
         $sql='select count(*) from '.$this->table." where order_sn='" .$sn ."'";
         return $this->db->getOne($sql) ? $this->createSn():$sn;
     }
+    //撤销订单
+    public function invoke($order_id){
+        $this->del($order_id);
+        $sql = 'delete from ordergoods where order_id = '.$order_id;
+        return $this->db->query($sql);
+    }
 }
