@@ -18,7 +18,7 @@
       <file leaf-file-name="bianjiqi2.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bianjiqi2.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="709">
+            <state relative-caret-position="521">
               <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="35" />
               <folding>
                 <element signature="n#style#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -27,88 +27,32 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mined.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/mined.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/min123/_src/editor.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="300">
-              <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editor_api.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/min123/_examples/editor_api.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="simpleDemo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/min123/_examples/simpleDemo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpvis/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="734">
-              <caret line="178" column="7" lean-forward="false" selection-start-line="173" selection-start-column="3" selection-end-line="178" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bianji3.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="bianji3.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bianji3.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="575">
-              <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="250">
+              <caret line="10" column="85" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="10" selection-end-column="85" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="umeditor.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/phpvis/umeditor.js">
+      <file leaf-file-name="bianjiqi.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bianjiqi.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="1945" column="14" lean-forward="false" selection-start-line="1945" selection-start-column="14" selection-end-line="1945" selection-end-column="14" />
-              <folding>
-                <marker date="1486710014000" expanded="true" signature="94774:94815" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="94817:94823" ph=" " />
-                <marker date="1486710014000" expanded="true" signature="129773:129779" ph=" " />
-                <marker date="1486710014000" expanded="true" signature="197246:197277" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="197796:197814" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="198010:198028" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="198344:198375" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="251694:251857" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="252143:252149" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="275758:275764" ph=" " />
-                <marker date="1486710014000" expanded="true" signature="311509:311748" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="313457:313465" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="314289:314302" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="322796:322892" ph="..." />
-                <marker date="1486710014000" expanded="true" signature="336719:336754" ph="..." />
-              </folding>
+            <state relative-caret-position="350">
+              <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bjqi.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bjqi.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -116,8 +60,8 @@
       <file leaf-file-name="umeditor.config.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/phpvis/umeditor.config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="4" />
+            <state relative-caret-position="-2759">
+              <caret line="149" column="132" lean-forward="true" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="132" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
               </folding>
@@ -158,8 +102,10 @@
         <option value="$PROJECT_DIR$/bianjiqi.html" />
         <option value="$PROJECT_DIR$/ueditor-1.4.3.3/demo.html" />
         <option value="$PROJECT_DIR$/bianjiqi2.html" />
-        <option value="$PROJECT_DIR$/bianji3.html" />
         <option value="$PROJECT_DIR$/mined.html" />
+        <option value="$PROJECT_DIR$/phpvis/umeditor.config.js" />
+        <option value="$PROJECT_DIR$/bjqi.php" />
+        <option value="$PROJECT_DIR$/bianji3.html" />
       </list>
     </option>
   </component>
@@ -173,8 +119,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1370" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -211,7 +157,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,22 +169,9 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="add" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="add" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="min123" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -343,17 +275,18 @@
       <workItem from="1490321045180" duration="2281000" />
       <workItem from="1490406268022" duration="2733000" />
       <workItem from="1490578005813" duration="15800000" />
+      <workItem from="1490615425103" duration="5148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92470000" />
+    <option name="totallyTimeSpent" value="97618000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
+    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.123958334" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12333826" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -383,13 +316,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/biaodan.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/r/fff.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -448,7 +374,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="534">
           <caret line="173" column="38" lean-forward="false" selection-start-line="173" selection-start-column="38" selection-end-line="173" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -456,9 +381,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="13" column="20" lean-forward="false" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -466,7 +388,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="31" lean-forward="false" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -494,7 +415,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
           <caret line="8" column="9" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -502,7 +422,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="26" lean-forward="false" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -530,9 +449,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3200">
           <caret line="133" column="14" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="181" selection-end-column="1" />
-          <folding>
-            <element signature="e#6#94#0#PHP" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -544,155 +460,25 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bianjiqi.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="17" column="50" lean-forward="false" selection-start-line="17" selection-start-column="50" selection-end-line="17" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/demo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="125">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor/_src/editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor/umeditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3675">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor/changelog.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-111">
-            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1800">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="650">
-            <caret line="29" column="54" lean-forward="false" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="54" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor/_examples/editor_api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="69" column="15" lean-forward="false" selection-start-line="69" selection-start-column="8" selection-end-line="69" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/_src/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/_src/editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="2" column="3" lean-forward="true" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/.editorconfig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/ueditor.parse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="68" column="80" lean-forward="false" selection-start-line="68" selection-start-column="80" selection-end-line="68" selection-end-column="80" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="33" column="0" lean-forward="true" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditorx/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditorx/ueditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ueditorx/ueditor.parse.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/demo.html" />
+    <entry file="file://$PROJECT_DIR$/ueditor/_src/editor.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor/umeditor.config.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor/changelog.md" />
+    <entry file="file://$PROJECT_DIR$/ueditor/Gruntfile.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/README.md" />
+    <entry file="file://$PROJECT_DIR$/ueditor/_examples/editor_api.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/_src/api.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/_src/editor.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/Gruntfile.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/.editorconfig" />
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/ueditor.parse.js" />
+    <entry file="file://$PROJECT_DIR$/ueditor-1.4.3.3/ueditor.config.js" />
+    <entry file="file://$PROJECT_DIR$/ueditorx/Gruntfile.js" />
+    <entry file="file://$PROJECT_DIR$/ueditorx/ueditor.config.js" />
+    <entry file="file://$PROJECT_DIR$/ueditorx/ueditor.parse.js" />
     <entry file="file://$PROJECT_DIR$/bianjiqi2.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="709">
+        <state relative-caret-position="521">
           <caret line="31" column="35" lean-forward="false" selection-start-line="31" selection-start-column="27" selection-end-line="31" selection-end-column="35" />
           <folding>
             <element signature="n#style#0;n#script#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -700,30 +486,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/min123/_examples/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/min123/_examples/simpleDemo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="40" lean-forward="false" selection-start-line="29" selection-start-column="8" selection-end-line="29" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/min123/_examples/editor_api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="42" column="21" lean-forward="false" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/min123/_examples/index.html" />
+    <entry file="file://$PROJECT_DIR$/min123/_examples/simpleDemo.html" />
+    <entry file="file://$PROJECT_DIR$/min123/_examples/editor_api.js" />
     <entry file="file://$PROJECT_DIR$/phpvis/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="734">
@@ -732,95 +497,70 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/min123/umeditor.config.js" />
+    <entry file="file://$PROJECT_DIR$/min123/_src/editor.js" />
+    <entry file="file://$PROJECT_DIR$/min123/umeditor.js" />
+    <entry file="file://$PROJECT_DIR$/mined.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="700">
+          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/phpvis/umeditor.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="1945" column="14" lean-forward="false" selection-start-line="1945" selection-start-column="14" selection-end-line="1945" selection-end-column="14" />
+        <state relative-caret-position="-399">
+          <caret line="36" column="15" lean-forward="false" selection-start-line="36" selection-start-column="8" selection-end-line="36" selection-end-column="15" />
           <folding>
-            <marker date="1486710014000" expanded="true" signature="94774:94815" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="94817:94823" ph=" " />
-            <marker date="1486710014000" expanded="true" signature="129773:129779" ph=" " />
-            <marker date="1486710014000" expanded="true" signature="197246:197277" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="197796:197814" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="198010:198028" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="198344:198375" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="251694:251857" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="252143:252149" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="275758:275764" ph=" " />
-            <marker date="1486710014000" expanded="true" signature="311509:311748" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="313457:313465" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="314289:314302" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="322796:322892" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="336719:336754" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="94774:94815" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="94817:94823" ph=" " />
+            <marker date="1490615290352" expanded="true" signature="129773:129779" ph=" " />
+            <marker date="1490615290352" expanded="true" signature="197246:197277" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="197796:197814" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="198010:198028" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="198344:198375" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="251694:251857" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="252143:252149" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="275758:275764" ph=" " />
+            <marker date="1490615290352" expanded="true" signature="311509:311748" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="313457:313465" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="314289:314302" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="322796:322892" ph="..." />
+            <marker date="1490615290352" expanded="true" signature="336719:336754" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/phpvis/umeditor.config.js">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2759">
+          <caret line="149" column="132" lean-forward="true" selection-start-line="149" selection-start-column="13" selection-end-line="149" selection-end-column="132" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bjqi.php">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
-          <caret line="11" column="4" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="4" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/min123/umeditor.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/min123/_src/editor.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="12" column="22" lean-forward="true" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="22" />
+          <caret line="8" column="16" lean-forward="false" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/min123/umeditor.js">
+    <entry file="file://$PROJECT_DIR$/bianjiqi.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-75">
-          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <marker date="1486710014000" expanded="true" signature="94774:94815" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="94817:94823" ph=" " />
-            <marker date="1486710014000" expanded="true" signature="129773:129779" ph=" " />
-            <marker date="1486710014000" expanded="true" signature="197246:197277" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="197796:197814" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="198010:198028" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="198344:198375" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="251694:251857" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="252143:252149" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="275758:275764" ph=" " />
-            <marker date="1486710014000" expanded="true" signature="311509:311748" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="313457:313465" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="314289:314302" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="322796:322892" ph="..." />
-            <marker date="1486710014000" expanded="true" signature="336719:336754" ph="..." />
-          </folding>
+        <state relative-caret-position="350">
+          <caret line="14" column="36" lean-forward="false" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/bianji3.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="575">
-          <caret line="23" column="4" lean-forward="false" selection-start-line="23" selection-start-column="4" selection-end-line="27" selection-end-column="8" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mined.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="28" column="7" lean-forward="true" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
+        <state relative-caret-position="250">
+          <caret line="10" column="85" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="10" selection-end-column="85" />
           <folding />
         </state>
       </provider>

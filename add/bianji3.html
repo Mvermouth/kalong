@@ -14,13 +14,21 @@
     <script type="text/javascript" src="phpvis/lang/zh-cn/zh-cn.js"></script>
 </head>
 <body>
-<script type="text/plain" id="myEditor" style="width:1000px;height:240px;">
-    <p>这里我可以写一些输入提示</p>
-</script>
+<!--<script type="text/plain" id="myEditor" style="width:1000px;height:240px;">-->
+    <!--<p>这里我可以写一些输入提示</p>-->
+<!--</script>-->
+<form action="bjqi.php" method="post">
+    <textarea id="myEditor" name="myEd"></textarea>
+    <br>
+    <input type="submit" value="ok">
+
+</form>
+<button onclick="gett()">获取</button>
 <div id="focush2"></div>
 
 <script>
-    var um = UM.getEditor('myEditor');
+    var um = UM.getEditor('myEditor',{initialFrameWidth:750,initialFrameHeight:500,toolbar:['source | undo redo | bold italic underline strikethrough | superscript subscript | forecolor backcolor | removeformat |']});
+
     um.ready( function() {
         um.setContent('初始化完毕');
         console.log("初始化咯");
@@ -35,6 +43,9 @@
     um.addListener( 'selectionchange', function( editor ) {
         console.log('选区发生改变');
     })
+    function gett() {
+        alert(um.getContent());
+    }
 </script>
 </body>
 </html>
