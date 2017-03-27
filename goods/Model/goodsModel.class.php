@@ -34,7 +34,7 @@ class goodsModel extends Model{
        return $this->db->getAll($sql);
     }
     //指定栏目商品
-    public function getTarget($cat_id,$offer='',$perpage=''){
+    public function getTarget($cat_id,$offer=0,$perpage=5){
         $cate=new catModel();
         $goodsAll=$cate->select();
         $sons=$cate->getcatTree($goodsAll,$cat_id);
@@ -72,6 +72,12 @@ class goodsModel extends Model{
 //       $sql="select * from ".$this->table." where goods_id in (".implode(',',$ids).")";
 //        return $this->db->getAll($sql);
 
+    }
+    //得到栏目下所有商品数
+    public function getCatList($cat_id){
+        $sql="select count(*) from goods where cat_id= ".$cat_id;
+        $res=$this->db->getAll($sql);
+        return $res[0]['count(*)'];
     }
 }
 ?>

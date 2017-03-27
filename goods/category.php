@@ -9,26 +9,50 @@ define('ACC',true);
 require('./include/init.php');
 session_start();
 header("Content-type: text/html; charset=utf8");
-//取出树状导航，面包屑导航
+$cats=new catModel();
+$goods=new goodsModel();
 //栏目下的商品
 $cat_id=$_GET['cat_id'];
-//分页
+//每页2个
+$perpage=2;
+//当前页
 $page_id=isset($_GET['page']) ? $_GET['page']+0 : 1;
+$durpage=$page_id;
+//一共几条
+$total=$goods->getCatList($cat_id);
+//print_r($total);
+//exit;
+//echo $total;
+$pagenav=new PageTool($total,$perpage,$durpage);
+
+//取出树状导航，面包屑导航
+
+//分页
+
 if($page_id < 1 ){
     $page_id=1;
 }
-//每页2个
-$perpage=2;
-$offer=($page_id-1)*$perpage;
+//一共多少页
+$pagenum=ceil($total/$perpage);
+//echo "<hr/>";
+//echo $pagenum."ye";
+//echo "<hr/>";
+//echo $page_id."id";
+if($page_id > $pagenum ){
+    $page_id=1;
+}
 
+
+$offer=($page_id-1)*$perpage;
+$navb=$pagenav->show();
+//echo $cnt;
 
 if(empty($cat_id)){
     echo "cat_id 不存在";
     header('location:index.php');
     exit;
 }
-$cats=new catModel();
-$goods=new goodsModel();
+
 $catAll=$cats->select();
 //if(in_array($cat_id,$catAll['cat_id'])){
 //    echo "cat_id 不存在";

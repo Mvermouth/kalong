@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>UMEDITOR 完整demo</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="phpvis/themes/default/css/umeditor.css" type="text/css" rel="stylesheet">
+    <script type="text/javascript" src="phpvis/third-party/jquery.min.js"></script>
+    <script type="text/javascript" src="phpvis/third-party/template.min.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phpvis/umeditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="phpvis/umeditor.min.js"></script>
+    <script type="text/javascript" src="phpvis/lang/zh-cn/zh-cn.js"></script>
+</head>
+<body>
+<script type="text/plain" id="myEditor" style="width:1000px;height:240px;">
+    <p>这里我可以写一些输入提示</p>
+</script>
+<div id="focush2"></div>
+
+<script>
+    var um = UM.getEditor('myEditor');
+    um.ready( function() {
+        um.setContent('初始化完毕');
+        console.log("初始化咯");
+        um.focus();
+    } );
+    um.addListener('blur',function(){
+        $('#focush2').html('编辑器失去焦点了')
+    });
+    um.addListener('focus',function(){
+        $('#focush2').html('又有了')
+    });
+    um.addListener( 'selectionchange', function( editor ) {
+        console.log('选区发生改变');
+    })
+</script>
+</body>
+</html>

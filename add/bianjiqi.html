@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bianjiqi</title>
+</head>
+<style>
+    .box{
+        width: 500px;
+        height: 300px;
+        background: green;
+    }
+</style>
+<body>
+    <div class="box" contenteditable="true">
+        hello
+    </div>
+    <input type="submit" value="kan" onclick="al()">
+
+    <script>
+        var box=document.querySelector(".box");
+
+        function al(){
+            var test =box.innerHTML;
+            alert(test);
+        }
+    </script>
+
+</body>
+</html>
