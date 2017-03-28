@@ -10840,3 +10840,228 @@ select goods_id,goods_name,thumb_img,market_price,shop_price from goods where ca
 select * from category
 select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 0,5
 select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 0,5
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017032849726'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('碧血剑','kl2017032849726','93','88','99','<p>这是一个测试</p>','0','1','1','','','0','1490665808','data/images/20173/28/i54qvt.jpg','data/images/20173/28/goods_i54qvt.jpg','data/images/20173/28/thumb_i54qvt.jpg')
+1
+
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 0,5
+select * from category
+1
+
+select * from goods where goods_id=56
+select cat_id from goods where goods_id=56
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 0,5
+select * from category
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017032894627'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('玄铁建','kl2017032894627','93','123','431','<p>这又<span style=\"font-size:24px\"><span style=\"text-decoration:underline;\"><em><strong>是一个</strong></em></span></span>测试<img src=\"http://img.baidu.com/hi/jx2/j_0038.gif\"/><img src=\"http://localhost/goods/lib/umeditor/php/upload/20170328/14906659647031.jpg\"/></p>','423','1444','1','1','1','','','0','1490666011','data/images/20173/28/30y691.jpg','data/images/20173/28/goods_30y691.jpg','data/images/20173/28/thumb_30y691.jpg')
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 0,5
+select * from category
+1
+
+select * from goods where goods_id=57
+select cat_id from goods where goods_id=57
+select * from category
+select * from category
+1
+
+select * from category
+1
+
+select * from goods where goods_id=57
+select cat_id from goods where goods_id=57
+select * from category
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from category
+1
+
+select * from goods where is_delete=0
+1
+
+select * from category
+1
+
+desc goods
+select count(*) from goods where goods_sn='kl2017032857917'
+insert into goods(goods_name,goods_sn,cat_id,shop_price,market_price,goods_desc,goods_weight,goods_number,is_best,is_new,is_on_sale,keywords,goods_brief,goods_id,add_time,ori_img,goods_img,thumb_img) values('龙泉宝剑','kl2017032857917','5','324','356','<p>这是龙泉宝剑</p><p><img src=\"http://img.baidu.com/hi/jx2/j_0013.gif\"/></p><p><img src=\"http://localhost/goods/data/upload/20170328/14906796001806.jpg\"/></p>','111','222','1','1','1','','','0','1490679607','data/images/20173/28/rb38av.jpg','data/images/20173/28/goods_rb38av.jpg','data/images/20173/28/thumb_rb38av.jpg')
+1
+
+select * from goods where goods_id=57
+select cat_id from goods where goods_id=57
+select * from category
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 0,5
+select * from category
+1
+
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where is_new=1 order by add_time desc limit 5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(93,94,95) order by add_time desc limit 0,5
+select * from category
+select goods_id,goods_name,thumb_img,market_price,shop_price from goods where cat_id in(96,97,98) order by add_time desc limit 0,5
+select * from category
+1
+
+select * from goods where goods_id=58
+select cat_id from goods where goods_id=58
+select * from category
+select * from category
+1
+
+select * from goods where goods_id=58
+select cat_id from goods where goods_id=58
+select * from category
+select * from category
