@@ -331,6 +331,21 @@
 	 * 
 	 * 
 	 * */
+/*
+	5.我常用的表操作语句:
+1.mysql -h localhost -uroot -p123456 -- 以root用户连接本地数据库
+2. show databases; -- 查看MySQL服务中所有的数据库
+3. use database; -- 更改操作的数据库对象
+4.\c --取消执行当前未输入mysql语句
+5. show tables; -- 查看该操作数据库对象中所有的数据表名和视图名
+6.desc table_name/view_name;--查看表/视图结构；
+7.truncate table_name; --清空表数据【表结构依然不变】-- 和delete from table_name;是不同的
+8.show create table table_name/view; --查看建表/视图过程
+9.show table status [\G]; -- 查看数据库中所有表信息【\G:以竖行显示信息】
+10.show table status where name = table_name [\G]; -- 查看数据库中指定表信息【\G:以竖行显示信息】
+11.rename table_name; --改表名
+12.drop table table_name; --删除表
+13.drop view view_name; -- 删除视图
 	//项目学到的
 	/*
 	 1.instanceof 这个实例是否这个类的什么什么鬼，返回bool
