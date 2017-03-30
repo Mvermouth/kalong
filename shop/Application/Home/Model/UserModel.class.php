@@ -15,5 +15,4 @@ class UserModel extends Model{
             echo "ok";
         }
     }
-
 }

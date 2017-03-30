@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <!--<h1>{$num==5 ? $num:'5'}</h1>-->
+    <table border="1">
+        <tr>
+            <td>名字</td>
+            <td>价格</td>
+            <td>id</td>
+        </tr>
+        <foreach name='goods' item="g">
+        <tr>
+            <td>{$g.goods_name}</td>
+            <td>{$g.shop_price}</td>
+            <td>{$g.goods_id}</td>
+        </tr>
+        </foreach>
+        <form action="" method="get">
+            <input type="text" name="goods_name">
+            <input type="text" name="shop_price">
+            <input type="submit" valuse="ok">
+        </form>
+    </table>
+</body>
+</html>

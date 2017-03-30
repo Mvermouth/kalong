@@ -11,8 +11,12 @@ use Think\Controller;
 class UserController extends Controller{
     public function add(){//一个方法对应一个Html文件 方法名对HTML名
         //echo "i am add";
-        $a=123;
-        $this->assign('a',$a);
+        //$a=123;
+        $best=array('q','w','e','r');
+        $this->assign('a','hello');
+        $this->assign('b','bilibi');
+        $this->assign('rand',mt_rand(1,100));
+        $this->assign('best',$best);
         $this->display();
         //echo 1;
     }

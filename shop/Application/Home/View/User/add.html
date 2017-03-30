@@ -3,13 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="__PUBLIC__/css/css.css">
 </head>
 <style>
     p{
         color: red;
     }
+    h2{
+        color: aqua;
+    }
 </style>
 <body>
     <p>{$a}</p>
+    <h1>{$b}</h1>
+    <h3>test</h3>
+    <h2>{$rand},<if condition="$rand egt 60">及格<else/>不及格</if></h2>
+
+    <foreach name="best" item="g">
+        <li>{$g}</li>
+    </foreach>
+    <!--引入jq！！！-->
+    <import type="js" file="js.jq"/>
+<!--<load href="__PUBLIC__/js/jq.js"></load>-->
 </body>
+
+<script>
+    //alert($);
+    var title=document.querySelector('h2');
+    var t=title.innerHTML;
+    var str=t.split(',',[1]).join();
+    //console.log(arr);
+    function pan(str){
+        if(str >= 60){
+            title.style.color='green';
+        }else{
+            title.style.color='red';
+        }
+    }
+    pan(str);
+</script>
 </html>
