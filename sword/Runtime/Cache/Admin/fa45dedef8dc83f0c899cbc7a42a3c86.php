@@ -28,7 +28,7 @@
         <td class="label">上级分类:</td>
         <td>
           <select name="parent_id">
-              <option value="0">leixing</option>
+              <option value="0">类型</option>
               <?php if(is_array($gettree)): foreach($gettree as $key=>$c): ?><option value="<?php echo ($c["cat_id"]); ?>"  <?php echo ($c['cat_id']==$catinfo['parent_id']?'selected':''); ?>  ><?php echo ($c["cat_name"]); ?></option><?php endforeach; endif; ?>
 
               <!---
@@ -51,7 +51,7 @@
       <tr>
         <td class="label">分类描述:</td>
         <td>
-          <textarea name='intro' rows="6" cols="48"><?php echo ($catinfo["intro"]); ?></textarea>
+          <textarea name='intr' rows="6" cols="48"><?php echo ($catinfo["intr"]); ?></textarea>
         </td>
       </tr>
       </table>
