@@ -28,8 +28,8 @@
         <td class="label">上级分类:</td>
         <td>
           <select name="parent_id">
-                        <option value="1">类型</option>
-                        <?php if(is_array($gettree)): foreach($gettree as $key=>$c): ?><option value="<?php echo ($c["cat_id"]); ?>"><?php echo ($c["cat_name"]); ?></option><?php endforeach; endif; ?>
+                        <option value="0">类型</option>
+                        <?php if(is_array($gettree)): foreach($gettree as $key=>$c): ?><option value="<?php echo ($c["cat_id"]); ?>"><?php echo (str_repeat('&nbsp;',$c["lv"])); echo ($c["cat_name"]); ?></option><?php endforeach; endif; ?>
                         <!--<option value="2">&nbsp;&nbsp;CDMA手机</option>-->
                         <!--<option value="3">&nbsp;&nbsp;GSM手机</option>-->
                         <!--<option value="4">&nbsp;&nbsp;3G手机</option>-->

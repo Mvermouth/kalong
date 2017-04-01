@@ -31,7 +31,7 @@
   </tr>
   <?php if(is_array($catlist)): foreach($catlist as $key=>$cat): ?><tr align="center" class="0" id="0_1" id = 'tr_1'>
     <td align="left" class="first-cell" style = 'padding-left="0"'>
-            <img src="/sword/Public/Admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:<?php echo ($cat['lv']*2); ?>em" />
+            <img src="/sword/Public/Admin/images/menu_minus.gif" id="icon_0_1" width="9" height="9" border="0" style="margin-left:<?php echo ($cat['lv']*10); ?>px" />
             <span><a href="#" ><?php echo ($cat["cat_name"]); ?></a></span>
         </td>
     <td width="10%">0</td>

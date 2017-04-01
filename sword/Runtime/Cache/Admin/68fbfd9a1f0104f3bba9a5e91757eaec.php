@@ -7,6 +7,11 @@
     <meta http-equiv="Content-Type" c/>
     <link href="/sword/Public/Admin/css/general.css" rel="stylesheet" type="text/css"/>
     <link href="/sword/Public/Admin/css/main.css" rel="stylesheet" type="text/css"/>
+    <style>
+        .current{
+            color:red;
+        }
+    </style>
 </head>
 <body>
 

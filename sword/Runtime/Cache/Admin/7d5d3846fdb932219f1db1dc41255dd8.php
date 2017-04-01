@@ -88,7 +88,7 @@
                 <tr>
                     <td class="label">上传商品图片：</td>
                     <td>
-                        <input type="file" name="goods_img" size="35"/>
+                        <input type="file" name="img_path" size="35"/>
                     </td>
                 </tr>
             </table>
@@ -119,10 +119,10 @@
                 </tr>
                 <tr>
                     <td class="label">加入推荐：</td>
-                    <td><input type="checkbox" name="is_best" value="1"/>精品 <input type="checkbox" name="is_new"
-                                                                                   value="1"/>新品 <input type="checkbox"
-                                                                                                        name="is_hot"
-                                                                                                        value="1"/>热销
+                    <td>
+                        <input type="checkbox" name="is_best" value="1"/>精品
+                        <input type="checkbox" name="is_new" value="1"/>新品
+                        <input type="checkbox" name="is_hot" value="1"/>热销
                     </td>
                 </tr>
                 <tr id="alone_sale_1">

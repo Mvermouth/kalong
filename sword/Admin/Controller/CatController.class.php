@@ -26,7 +26,8 @@ class CatController extends Controller {
     }
     public function catelist(){
         $catM=D('Cat');
-        $cat=$catM->select();
+        $cat=$catM->gettree();
+        //exit;
         if($cat){
             $this->assign('catlist',$cat);
         }
@@ -34,8 +35,13 @@ class CatController extends Controller {
     }
     public function catedel(){
         $catM=D('Cat');
-        if($catM->delete(I('cat_id'))) {
-            $this->redirect('Admin/Cat/catelist');
+        if($catM->getson(I('cat_id'))){
+            echo "有个孩子哦";
+            return false;
+        }else{
+            if($catM->delete(I('cat_id'))) {
+                $this->redirect('Admin/Cat/catelist');
+            }
         }
         $this->display();
     }

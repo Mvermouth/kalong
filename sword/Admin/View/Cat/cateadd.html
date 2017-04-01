@@ -28,9 +28,9 @@
         <td class="label">上级分类:</td>
         <td>
           <select name="parent_id">
-                        <option value="1">类型</option>
+                        <option value="0">类型</option>
                         <foreach name="gettree" item="c">
-                            <option value="{$c.cat_id}">{$c.cat_name}</option>
+                            <option value="{$c.cat_id}">{$c.lv|str_repeat='&nbsp;',###}{$c.cat_name}</option>
                         </foreach>
                         <!--<option value="2">&nbsp;&nbsp;CDMA手机</option>-->
                         <!--<option value="3">&nbsp;&nbsp;GSM手机</option>-->
