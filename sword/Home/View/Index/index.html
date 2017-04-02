@@ -97,7 +97,7 @@
                             <dd class="clearfix">
                                 <foreach name="tree" item="s">
                                     <if condition="$v[cat_id] eq $s[parent_id]">
-                                        <p class=""><a href="#" title="{$s.intr}" class="txtdot">{$s.cat_name}</a></p>
+                                        <p class=""><a href="{:U('Home/Cat/cat',array('cat_id'=>$s['cat_id']))}" title="{$s.intr}" class="txtdot">{$s.cat_name}</a></p>
                                         <!--{:U('Home/cat/cat',array('cat_id'=>$s[cat_id]))}-->
                                     </if>
                                 </foreach>
@@ -241,15 +241,15 @@
                 </div>
             </div>
             <div class="recommendContent entry-content" id="show_hot_area">
-                <foreach>
+                <foreach name="glist" item="g">
                     <div class="goodsbox1">
                         <div class="imgbox1">
-                            <a href="">
-                                <img src="1" alt="">
+                            <a href="{:U('Home/Goods/goods',array('goods_id'=>$g['goods_id']))}">
+                                <img src="../../.{$g['thumb_img']}" alt="" class="imggggg">
                             </a>
                         </div>
-                        <a href="./goods.php-id=5.htm" title="ECSHOP模板中心68ecshop.com测试商品">ECSHOP模板中心68ecs...</a><br>
-                        <font class="goodspice market">￥24元</font>
+                        <a href="{:U('Home/Goods/goods',array('goods_id'=>$g['goods_id']))}" title="ECSHOP模板中心68ecshop.com测试商品">{$g[goods_name]}</a><br>
+                        <font class="goodspice market">￥{$g.shop_price}元</font>
                         <b class="f1">￥20元</b><br>
                     </div>
                 </foreach>

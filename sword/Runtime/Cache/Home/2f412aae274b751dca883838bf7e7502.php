@@ -91,7 +91,7 @@
                 <?php if(is_array($tree)): foreach($tree as $key=>$v): if($v["lv"] == 0): ?><dl>
                             <dt><a href=""><?php echo ($v["cat_name"]); ?></a></dt>
                             <dd class="clearfix">
-                                <?php if(is_array($tree)): foreach($tree as $key=>$s): if($v[cat_id] == $s[parent_id]): ?><p class=""><a href="#" title="<?php echo ($s["intr"]); ?>" class="txtdot"><?php echo ($s["cat_name"]); ?></a></p>
+                                <?php if(is_array($tree)): foreach($tree as $key=>$s): if($v[cat_id] == $s[parent_id]): ?><p class=""><a href="<?php echo U('Home/Cat/cat',array('cat_id'=>$s['cat_id']));?>" title="<?php echo ($s["intr"]); ?>" class="txtdot"><?php echo ($s["cat_name"]); ?></a></p>
                                         <!--<?php echo U('Home/cat/cat',array('cat_id'=>$s[cat_id]));?>--><?php endif; endforeach; endif; ?>
 
                             </dd>
@@ -229,18 +229,16 @@
                 </div>
             </div>
             <div class="recommendContent entry-content" id="show_hot_area">
-                <foreach>
-                    <div class="goodsbox1">
+                <?php if(is_array($glist)): foreach($glist as $key=>$g): ?><div class="goodsbox1">
                         <div class="imgbox1">
-                            <a href="">
-                                <img src="1" alt="">
+                            <a href="<?php echo U('Home/Goods/goods',array('goods_id'=>$g['goods_id']));?>">
+                                <img src="../../.<?php echo ($g['thumb_img']); ?>" alt="" class="imggggg">
                             </a>
                         </div>
-                        <a href="./goods.php-id=5.htm" title="ECSHOP模板中心68ecshop.com测试商品">ECSHOP模板中心68ecs...</a><br>
-                        <font class="goodspice market">￥24元</font>
+                        <a href="<?php echo U('Home/Goods/goods',array('goods_id'=>$g['goods_id']));?>" title="ECSHOP模板中心68ecshop.com测试商品"><?php echo ($g[goods_name]); ?></a><br>
+                        <font class="goodspice market">￥<?php echo ($g["shop_price"]); ?>元</font>
                         <b class="f1">￥20元</b><br>
-                    </div>
-                </foreach>
+                    </div><?php endforeach; endif; ?>
             </div>
         </div>
         <div class="blank">

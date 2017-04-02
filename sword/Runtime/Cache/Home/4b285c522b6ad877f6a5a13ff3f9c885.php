@@ -56,7 +56,7 @@
   </div>
 <div class="globa-nav clearfix" style="position:relative">
 <div class="block1">
-  <div class="allMenu fl"> <a href="" title="" style="font-size:15px;" class="index current">首页</a>
+  <div class="allMenu fl"> <a href="<?php echo U('Home/Index/index');?>" title="" style="font-size:15px;" class="index current">首页</a>
     <a href="" style="font-size:15px;" title="GSM手机">GSM手机</a>
     <a href="" style="font-size:15px;" title="双模手机">双模手机</a>
     <a href="" style="font-size:15px;" title="手机配件">手机配件</a>
@@ -76,7 +76,7 @@
 	  <div class="goodsimgbox fl">
 		<div id="focuscont">
      <a style="border: 1px solid rgb(210, 208, 208); width: 400px; height: 400px; display: block; padding: 0px; position: relative; outline: 0px; text-decoration: none;" href="/sword/Public/Home/images/32_G_1370338389558.jpg" id="zoom1" class="MagicZoom MagicThumb" title="ECSHOP模板中心68ecshop.com测试商品">
-        <img src="<?php echo ($goodsinfo[goods_img]); ?>" alt="ECSHOP模板中心68ecshop.com测试商品" width="400" height="400" style="margin:0;" id="sim974895">
+        <img src="/sword/Public/.<?php echo ($goodsinfo[img_path]); ?>" alt="ECSHOP模板中心68ecshop.com测试商品" width="400" height="400" style="margin:0;" id="sim974895">
      <div id="bc974895" class="MagicZoomBigImageCont" style="width: 310px; height: 310px; overflow: hidden; z-index: 100; visibility: hidden; position: absolute; top: -10000px; left: 415px;"><div class="MagicZoomHeader" id="MagicZoomHeaderbc974895" style="position: relative; z-index: 10; left: 0px; top: 0px; padding: 3px;">ECSHOP模板中心68ecshop.com测试商品</div><div style="overflow: hidden;"><img src="/sword/Public/Home/images/32_G_1370338389558.jpg" style="position: relative; border-width: 0px; padding: 0px; left: 0px; top: 0px;"></div><div style="color: rgb(255, 0, 0); font-size: 10px; font-weight: bold; font-family: Tahoma; position: absolute; width: 100%; text-align: center; left: 0px; top: 290px;"></div></div><div class="MagicZoomPup" style="z-index: 10; visibility: hidden; position: absolute; opacity: 0.05; width: 98px; height: 98px;"></div></a>
 	   </div>
     <div class="picture" id="imglist">
@@ -91,7 +91,7 @@
 		 <form class="goodsform" action="" method="post" name="ECS_FORMBUY" id="ECS_FORMBUY">
 			<p class="goodsInfo">
             <span>商品货号：<?php echo ($goodsinfo['goods_sn']); ?></span>
-            <span>商品库存： 4 台</span>
+            <span>商品库存： <?php echo ($goodsinfo[goods_number]); ?> 台</span>
             <span>商品品牌：<a href=""><u>诺基亚</u></a></span>
             <span>商品重量：0克</span>
             <span>上架时间：2009-05-12</span>
@@ -100,8 +100,8 @@
             </span>
 			</p>
 			<div class="Goodpromotion" style="float:left; width:550px; border-left:none; border-right:none;">
-			<font style="font-size:12px;">本店售价：</font><font class="price" id="ECS_SHOPPRICE" style="font-size:20px;">￥3010元</font><br>
-            <font class="goodspice" style="color:#CCC">市场价格：<span class="market">￥3612元</span></font><br>
+			<font style="font-size:12px;">本店售价：</font><font class="price" id="ECS_SHOPPRICE" style="font-size:20px;">￥<?php echo ($goodsinfo[shop_price]); ?>元</font><br>
+            <font class="goodspice" style="color:#CCC">市场价格：<span class="market">￥<?php echo ($goodsinfo[market_price]); ?>元</span></font><br>
 			<div class="blank"></div>
 			<a href="<?php echo U('Home/goods/gwc',array('goods_id'=>$goodsinfo['goods_id']));?>"><img src="/sword/Public/Home/images/bnt_buy.gif"></a>
             </div>

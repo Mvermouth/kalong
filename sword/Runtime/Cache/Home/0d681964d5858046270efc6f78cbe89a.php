@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0057)http://free.68ecshop.com/hechaw2013/user.php?act=register -->
 <html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="Generator" content="ECSHOP v2.7.3">
@@ -11,7 +11,7 @@
 </style>
 <link rel="shortcut icon" >
 <link rel="icon"  type="image/gif">
-<link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css">
+<link href="/sword/Public/Home/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="head-bar clearfix">
@@ -30,7 +30,7 @@
   </div></div>
 <div class="page-header clearfix">
   <div class="block1 clearfix" style="position:relative;">
-    <div class="logo fl"><a href="" title=""><img src="__PUBLIC__/Home/images/logo.gif" width="311" height="55" alt=""></a></div>
+    <div class="logo fl"><a href="" title=""><img src="/sword/Public/Home/images/logo.gif" width="311" height="55" alt=""></a></div>
       <div class="btMap">
         <div class="search ">
           <form id="searchForm" name="searchForm" method="get" action="">
@@ -72,7 +72,7 @@
     <div class="reg2_tit blank" style=" margin-top:15px; margin-left:50px;"><strong style="font-size:18px;">注册</strong> &nbsp;&nbsp;&nbsp;&nbsp; 新用户？ 立即注册，享受多重惊喜。</div>
       <div class="mbox" style="border:0px;">
         <div class="blank1" style="margin-top:15px;"></div>
-        <form action="{:U('Home/user/reg')}" method="post" name="formUser" >
+        <form action="<?php echo U('Home/user/reg');?>" method="post" name="formUser" >
           <table width="100%" border="0" align="left" cellpadding="5" cellspacing="3">
             <tbody><tr>
               <td width="15%" align="right">用户名</td>
@@ -185,7 +185,7 @@
     </div>
   </div>
 </div>
-<div class="block tc" style=""> <img src="__PUBLIC__/Home/images/serviceImg1.jpg"> </div>
+<div class="block tc" style=""> <img src="/sword/Public/Home/images/serviceImg1.jpg"> </div>
 <div class="block tc" style="margin-bottom:20px;">
   <a href="">免责条款</a>|
   <a href="">隐私保护</a>|

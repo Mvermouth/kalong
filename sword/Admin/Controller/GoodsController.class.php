@@ -9,6 +9,8 @@ class GoodsController extends Controller {
     }
 
     public function goodsadd(){
+        $catM=D('Admin/Cat');
+        $this->assign('gettree',$catM->gettree());
         if(IS_POST){
             //$this->goodsM->field('goods_name,goods_sn');
             //if(!$res=$this->goodsM->field('goods_name,goods_sn')->create()){//只可以通过2个
@@ -42,6 +44,9 @@ class GoodsController extends Controller {
 //                    $this->goodsM->img_path=$img_path;
                 }
 //exit;
+                if(empty($res['goods_sn'])){
+                    $res['goods_sn']=$this->goodsM->getGoodsSn();
+                }
                 if($this->goodsM->add($res)){
                     $this->redirect('Admin/Goods/goodsadd');
                 }
