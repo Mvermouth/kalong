@@ -19,12 +19,12 @@
     <div class="block1">
         <div class="site-bar"><font id="ECS_MEMBERZONE">
             <?php if(che()): ?>您好:<font color="red">
-                <b><?php echo (cookie('username')); ?>VIP</b></font>欢迎光临本店！
+                <b><?php echo (cookie('usename')); ?>VIP</b></font>欢迎光临本店！
                 | <a href="<?php echo U('Home/user/logout');?>">滚蛋蛋</a>
                 <?php else: ?>
                 <a href="<?php echo U('Home/user/login');?>" style="color:#50884b">登录</a> |
                 <a href="<?php echo U('Home/user/reg');?>" style="color:#50884b">免费注册</a><?php endif; ?>
-
+            <!--<b><?php echo (cookie('usename')); ?>VIP</b></font>欢迎光临本店！-->
 
         </font></div>
         <ul class="sitelinks">
@@ -153,8 +153,8 @@
                     <?php if(is_array($his)): foreach($his as $k=>$h): ?><li>
                             <div class="first">
                                 <div class="fl">
-                                    <font style="color:#F00; font-weight:bold"></font> <a
-                                        href="<?php echo U('Home/goods/goods/',array('goods_id'=>$k));?>" title=""><?php echo ($h['goods_name']); ?></a>
+                                    <font style="color:red; font-weight:bold"></font>
+                                    <a href="<?php echo U('Home/goods/goods/',array('goods_id'=>$k));?>" title=""><?php echo ($h['goods_name']); ?></a>
                                 </div>
                                 <div class="fr"><b class="f1">￥<?php echo ($h['shop_price']); ?>元</b></div>
                             </div>

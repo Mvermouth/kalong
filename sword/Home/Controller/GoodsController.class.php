@@ -4,8 +4,14 @@ use Think\Controller;
 class GoodsController extends Controller {
     public function goods(){
         $goodsM=D('Admin/Goods');
-        $goodsInfo=$goodsM->find(I('goods_id'));
+        if(!I('goods_id')){//如果丢进去的id为空的话直接跳回首页
+            redirect(U('Home/Index/index'));
+            exit;
+        }else{
+            $goodsInfo=$goodsM->find(I('goods_id'));
+        }
         //print_r($goodsInfo['cat_id']);exit;
+        $this->his($goodsInfo);
         $fm=$this->bread($goodsInfo['cat_id']);
         //print_r($fm);exit;
         $this->assign('goodsinfo',$goodsInfo);
@@ -27,5 +33,24 @@ class GoodsController extends Controller {
             }
         }
         return $fm;
+    }
+    //历史记录
+    protected function his($row){
+        if(isset($row['goods_name'])) {//有时会丢个空的进去不明所以，所以做个判断
+            $history = session('?history') ? session('history') : array();
+            $g = array();
+            $g['goods_name'] = $row['goods_name'];
+            $g['shop_price'] = $row['shop_price'];
+            $history[$row['goods_id']] = $g;//因为是键值，所以不会重复！
+            if (count($history) > 5) {
+                $key = key($history);
+                unset($history[$key]);
+            }
+
+//        if(empty($history[$key]['goods_name'])){
+//            unset($history[$key]);
+//        }
+            session('history',$history);
+        }
     }
 }

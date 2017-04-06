@@ -8,6 +8,7 @@ class IndexController extends Controller {
         $this->assign('tree',$catM->gettree());
         //热销
         $this->assign('glist',$goodsM->where("is_hot=1")->order('goods_id desc')->limit('0,4')->select());
+        $this->assign('his',array_reverse(session('history')),true);
         $this->display();
     }
 }

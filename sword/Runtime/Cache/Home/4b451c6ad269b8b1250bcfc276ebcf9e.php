@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN""http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <!-- saved from url=(0044)http://free.68ecshop.com/hechaw2013/user.php -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -15,7 +15,7 @@
     </style>
     <link rel="shortcut icon">
     <link rel="icon" type="image/gif">
-    <link href="__PUBLIC__/Home/css/style.css" rel="stylesheet" type="text/css">
+    <link href="/sword/Public/Home/css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="head-bar clearfix">
@@ -35,7 +35,7 @@
 </div>
 <div class="page-header clearfix">
     <div class="block1 clearfix" style="position:relative;">
-        <div class="logo fl"><a href="" title=""><img src="__PUBLIC__/Home/images/logo.gif" width="311" height="55"
+        <div class="logo fl"><a href="" title=""><img src="/sword/Public/Home/images/logo.gif" width="311" height="55"
                                                       alt=""></a></div>
         <div class="btMap">
             <div class="search ">
@@ -94,7 +94,7 @@
                                 <input type="text" class="" name="code" size="15">
                             </label>
                             <label>
-                                <img src="{:U('Home/user/code')}" alt="" width="200" height="40"/>
+                                <img src="<?php echo U('Home/user/code');?>" alt="" width="200" height="40"/>
                             </label>
                             <div class="btns">
                                 <input type="submit" value="" class="btn_submit_b">
@@ -127,7 +127,7 @@
                             <p>2. 收藏您关注的商品</p>
                             <p>3. 享受会员积分制度</p>
                             <p>4. 订阅本店商品信息</p>
-                            <p><a href=''><img src="__PUBLIC__/Home/images/bnt_ur_regh.gif"></a></p>
+                            <p><a href=''><img src="/sword/Public/Home/images/bnt_ur_regh.gif"></a></p>
                         </div>
                     </div>
                 </div>
@@ -191,7 +191,7 @@
         </div>
     </div>
 </div>
-<div class="block tc" style=""><img src="__PUBLIC__/Home/images/serviceImg1.jpg"></div>
+<div class="block tc" style=""><img src="/sword/Public/Home/images/serviceImg1.jpg"></div>
 <div class="block tc" style="margin-bottom:20px;">
     <a href="">免责条款</a>|
     <a href="">隐私保护</a>|
