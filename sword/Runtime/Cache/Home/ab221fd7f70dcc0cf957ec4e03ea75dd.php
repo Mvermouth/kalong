@@ -68,9 +68,9 @@
 <div class="block2">
 <div class="blank"></div>
 <div class="orderSuccess">
- <div class="order_sn tc"> 感谢您在本店购物！您的订单已提交成功，请记住您的订单号：<font class="a">2016010667329</font></div>
+ <div class="order_sn tc"> 感谢您在本店购物！您的订单已提交成功，请记住您的订单号：<font class="a"><?php echo ($goods_sn); ?></font></div>
   <div class="shipping_name">
-	 您的应付款金额为： <strong class="f1">￥3025.00元</strong><br>
+	 您的应付款金额为： <strong class="f1">￥<?php echo ($aMo); ?>元</strong><br>
 	</div>
  	<p>现在，您可以 <a >返回首页</a> 或去 <a >用户中心</a></p>
 </div>

@@ -103,7 +103,7 @@
 			<font style="font-size:12px;">本店售价：</font><font class="price" id="ECS_SHOPPRICE" style="font-size:20px;">￥<?php echo ($goodsinfo[shop_price]); ?>元</font><br>
             <font class="goodspice" style="color:#CCC">市场价格：<span class="market">￥<?php echo ($goodsinfo[market_price]); ?>元</span></font><br>
 			<div class="blank"></div>
-			<a href="<?php echo U('Home/goods/gwc',array('goods_id'=>$goodsinfo['goods_id']));?>"><img src="/sword/Public/Home/images/bnt_buy.gif"></a>
+			<a href="<?php echo U('Home/goods/car',array('goods_id'=>$goodsinfo['goods_id']));?>"><img src="/sword/Public/Home/images/bnt_buy.gif"></a>
             </div>
 		</form>
 		</div>
