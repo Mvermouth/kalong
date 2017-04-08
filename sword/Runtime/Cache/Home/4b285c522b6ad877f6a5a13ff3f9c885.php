@@ -1415,7 +1415,7 @@
 	 <div id="ECS_COMMENT"> <div class="clearfix" style="border:1px solid #C9DCEF; border-top:2px solid #509d0e">
 <h2 style=" margin:10px 0px 0px 20px; font-size:14px; color:#333333">用户评论</h2>
 
-        <?php if(is_array($comment)): foreach($comment as $key=>$co): ?><div class="tips"><?php echo ($co['email']); ?></div>:<?php echo ($co['content']); endforeach; endif; ?>
+        <?php if(is_array($comment)): foreach($comment as $key=>$co): ?><div class="tips" style="width:40px;margin-left: 10px"><?php echo ($co['email']); ?>:</div><?php echo ($co['content']); endforeach; endif; ?>
 
 <div class="Goodpromotion blank">
       <form action="<?php echo U('Home/goods/comment');?>" method="post" name="commentForm" id="commentForm">
@@ -1434,11 +1434,12 @@
         <tr>
           <td align="right" valign="top">评论内容：</td>
           <td>
-          <!-- <textarea name="content" class="InputBorder" cols="80" rows="3"></textarea> -->
+           <!--<textarea name="content" class="InputBorder" cols="80" rows="3"></textarea>-->
           <script type="text/javascript" charset="utf-8" src="/sword/Public/u/ueditor.config.js"></script>
           <script type="text/javascript" charset="utf-8" src="/sword/Public/u/ueditor.all.min.js"> </script>
           <script type="text/javascript" charset="utf-8" src="/sword/Public/u/lang/zh-cn/zh-cn.js"></script>
           <script id="editor" type="text/plain"  name="content" style="width:800px;height:200px;"></script>
+
           <script type="text/javascript">
               //实例化编辑器
               //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" method="POST">
+		<input type="submit" onclick="vote()" value='ok'>
+	</form>
+	<div class="st"></div>
+
+
+
+
+	<script>
+		//console.log(new XMLHttpRequest());
+		//判断支持
+		function creatXML(){
+			var xhr=null;
+			if(window.XMLHttpRequest){
+				xhr=new XMLHttpRequest();
+			}else if(window.ActiveXObject){//兼容ie
+				xhr=new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			return xhr;
+		}
+		//console.log(creatXML());
+		function vote(){
+			//制造xhr
+			var xhr=creatXML();
+			//打开链接 方式  url       同步
+			xhr.open('GET','vote2.php',true);
+			//发请求
+			xhr.send(null);
+			//alert(xhr.responseText);
+			//如何获得返回信息
+			//绑定状态变化的回调函数
+			xhr.onreadystatechange=function(){
+			    console.log(this.readyState);
+				if(this.readyState==4 && this.status==200){
+				    alert('请求ok');
+				    console.log(this.getAllResponseHeaders());
+				}
+			}
+			//alert('hello');
+		}
+	</script>
+</body>
+</html>

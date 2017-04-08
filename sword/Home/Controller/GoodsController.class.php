@@ -4,6 +4,7 @@ use Think\Controller;
 class GoodsController extends Controller {
     public function goods(){
         $goodsM=D('Admin/Goods');
+        $commentM=D('Home/Comment');
         if(!I('goods_id')){//如果丢进去的id为空的话直接跳回首页
             redirect(U('Home/Index/index'));
             exit;
@@ -16,6 +17,7 @@ class GoodsController extends Controller {
         //print_r($fm);exit;
         $this->assign('goodsinfo',$goodsInfo);
         $this->assign('mbx',$fm);
+        $this->assign('comment',$commentM->where('goods_id='.I('goods_id'))->select());
         $this->display();
     }
     public function bread($id){
@@ -65,5 +67,24 @@ class GoodsController extends Controller {
         //echo '<hr/>';
         //var_dump(session('kaka'));
        $this->redirect('Home/Order/checkout','添加成功');
+    }
+    //评论
+    public function comment(){
+        $commentM=D('Home/Comment');
+        $_POST['time']=time();
+        if(IS_POST){
+//            if(!$commentM->create()) {
+//                echo $commentM->getError();
+//                $this->error('新增失败');
+//            }else{
+                //$commentM->content = $commentM->content
+                if ($commentM->add($_POST)) {
+                    $this->success('操作完成');
+                //}
+            }
+        }
+        //print_r(I('goods_id'));
+        //$this->assign('comment',$commentM->where('goods_id='.I('goods_id'))->select());
+        //print_r($commentM->where('goods_id='.I('goods_id'))->select());
     }
 }

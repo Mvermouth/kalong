@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<form action="" method="POST">
+		<input type="submit" onclick="vote()" value='ok'>
+	</form>
+	
+
+
+
+
+	<script>
+		//console.log(new XMLHttpRequest());
+		//判断支持
+		function creatXML(){
+			var xhr=null;
+			if(window.XMLHttpRequest){
+				xhr=new XMLHttpRequest();
+			}else if(window.ActiveXObject){//兼容ie
+				xhr=new ActiveXObject('Microsoft.XMLHTTP');
+			}
+			return xhr;
+		}
+		//console.log(creatXML());
+		function vote(){
+			//制造xhr
+			var xhr=creatXML();
+			//打开链接 方式  url       同步
+			xhr.open('GET','vote1.php',true);
+			//发请求
+			xhr.send(null);
+		}
+	</script>
+</body>
+</html>
