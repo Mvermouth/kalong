@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>轮播</title>
+    <link href="__PUBLIC__/Home/css/index.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+<div class="slider">
+    <ul class="slider-main">
+        <foreach name="pict" item="p">
+            <if condition="$p['num'] eq 1">
+                <li style="z-index: 2">
+                    <a href="">
+                        <img src="__PUBLIC__/.{$p['img_path']}" alt="" />
+                    </a>
+                </li>
+                <else/>
+                <li>
+                    <a href="">
+                        <img src="__PUBLIC__/.{$p['img_path']}" alt="" />
+                    </a>
+                </li>
+            </if>
+        </foreach>
+
+    </ul>
+    <ul class="slider-nav">
+        <foreach name="pict" item="p">
+            <if condition="$p['num'] eq 1">
+                <li class="slider-item active">{$p['num']}</li>
+                <else/>
+                <li class="slider-item">{$p['num']}</li>
+            </if>
+        </foreach>
+    </ul>
+    <div class="slider-page" style="display: none;">
+        <a href="javascript:void(0)" class="slider-prev"><</a>
+        <a href="javascript:void(0)" class="slider-next">></a>
+    </div>
+</div>
+<!--<link href="__PUBLIC__/Admin/css/main.css" rel="stylesheet" type="text/css"/>-->
+<script src="__PUBLIC__/Home/js/index.js"></script>
+</body>
+</html>

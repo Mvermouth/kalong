@@ -1,0 +1,6 @@
+   图片表
+   create table pic(
+   pic_id int unsigned auto_increment primary key,
+   is_on tinyint unsigned not null default 1,
+   img_path varchar(80) not null default ''
+   )engine myisam charset utf8;

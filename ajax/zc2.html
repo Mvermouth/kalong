@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+<h1>ajax注册</h1>
+<form action="shujvku.php" method="POST"  target="regzone">
+    <input type="text" name='usename' id="usename" onkeyup="ajaxreg()">
+    <input type="text" name='password' id='password' onkeyup="ajaxreg()">
+    <input type="submit" value='zc'>
+    <!-- <input type="submit" onclick="vote()" value='ok'> -->
+</form>
+<div class="st"></div>
+<br>
+<div class="ss"></div>
+
+
+
+
+<script>
+    //console.log(new XMLHttpRequest());
+    //判断支持
+    var xhr=creatXML();
+    function creatXML(){
+        var xhr=null;
+        if(window.XMLHttpRequest){
+            xhr=new XMLHttpRequest();
+        }else if(window.ActiveXObject){//兼容ie
+            xhr=new ActiveXObject('Microsoft.XMLHTTP');
+        }
+        return xhr;
+    }
+    //console.log(creatXML());
+    // function vote(){
+    // 	//制造xhr
+    // 	var xhr=creatXML();
+    // 	//打开链接 方式  url       同步
+    // 	xhr.open('GET','vote2.php',true);
+    // 	//发请求
+    // 	xhr.send(null);
+    // 	//alert(xhr.responseText);
+    // 	//如何获得返回信息
+    // 	//绑定状态变化的回调函数
+    // 	xhr.onreadystatechange=function(){
+    // 	    console.log(this.readyState);
+    // 		if(this.readyState==4 && this.status==200){
+    // 		    alert('请求ok');
+    // 		    console.log(this.getAllResponseHeaders());
+    // 		}
+    // 	}
+    // 	//alert('hello');
+    // }
+    function ajaxreg(){
+        /*
+         1.收集表单数据
+         2.打开到后台服务器的链接【post】收集表单数据
+         3.发送数据
+         4.监听回调
+         */
+        //1.打开post连接
+        xhr.open('POST','./shujvku.php',true);
+        xhr.onreadystatechange=function(){
+            if(this.readyState==4){
+                //alert(this.responseText);//这是响应回来的信息
+                var res=this.responseText;
+                //alert(res);
+                var jsonObj = eval("("+res+")");//转为json对象
+                //alert(jsonObj.length);
+//                document.querySelector('.st').innerHTML=jsonObj.usename;
+//                document.querySelector('.ss').innerHTML=jsonObj.password;
+                var a=new Array();
+                //alert(typeof a);
+                for(i=0;i<jsonObj.length;i++){
+                    a[i]=jsonObj[i].name;
+                }
+                //alert(typeof a);
+               //alert(a);
+                document.querySelector('.st').innerHTML=a;
+            }
+        }
+        //2:收集表单数据，dom操作
+        var usename=document.querySelector('#usename').value;
+        var password=document.querySelector('#password').value;
+        //3:send
+        //alert('usename='+usename+'&password='+password)
+        //设置请求的头信息
+        xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+        xhr.send('usename='+usename+'&password='+password);
+        //xhr.send();
+        return false;
+    }
+</script>
+</body>
+</html>

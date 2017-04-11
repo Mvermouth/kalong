@@ -22,4 +22,9 @@ XMLHttpRequest
 
 xhr属性详解
 
+返回值
+	1.xml
+	2.普通文档
+	3.直接大段html代码
+	4.json ->其实原来没有这个 只是刚刚好js能很好解释
 

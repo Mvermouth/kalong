@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<foreach name="piclist" item="p">
+    <p>id:{$p['pic_id']},状态{$p['is_on']} <a href="{:U('Admin/Index/picDel',array('pic_id'=>$p['pic_id']))}">删除</a></p>
+</foreach>
+</body>
+</html>

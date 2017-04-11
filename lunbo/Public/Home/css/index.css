@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: "微软雅黑";
+}
+
+a {
+    text-decoration: none;
+}
+
+.slider {
+    width: 510px;
+    height: 454px;
+    position: relative;
+}
+
+.slider-main {
+    position: relative;
+}
+
+.slider-main li {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*.slider-main li:first-of-type{*/
+    /*z-index: 2;*/
+/*}*/
+
+.slider-nav {
+    position: absolute;
+    z-index: 10;
+    top: 400px;
+    width: 530px;
+    height: 0;
+    line-height: 0;
+    text-align: center;
+}
+
+.slider-nav li {
+    font-size: 9px;
+    width: 18px;
+    height: 18px;
+    line-height: 18px;
+    display: inline-block;
+    margin: 0 2px;
+    background: #3e3e3e;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.slider-nav li.active {
+    background: #b61b1f;
+}
+
+.slider-page a {
+    position: absolute;
+    top: 50%;
+    margin-top: -31px;
+    z-index: 1;
+    display: block;
+    width: 28px;
+    height: 62px;
+    line-height: 62px;
+    background: gray;
+    background: rgba(0, 0, 0, .2);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr=#32000000, endColorstr=#32000000);
+    color: #fff;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 400;
+    font-family: simsun;
+}
+
+.slider-prev {
+    left: 0;
+}
+
+.slider-next {
+    right: 0;
+}
+.zzz{
+    z-index: 99;
+}
