@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<!--method="post" action="vote4.php"-->
+<form id="f">
+    <input type="text" name="usename">
+    <input type="text" name="age">
+    <input type="button" value="ok" onclick="send1()">
+    <!--<input type="submit">-->
+</form>
+<div class="infor"></div>
+<script>
+//    var xhr=new XMLHttpRequest();
+//    var fm=$('#f');
+//    console.log(fm);
+//    var fd=new FormData(fm),
+//        infor=document.querySelector('.infor');
+//
+//    function fu() {
+//        xhr.open('post','vote4.php',true);
+//        xhr.onreadystatechange=function () {
+//            if(this.readyState==4){
+//                //infor.innerHTML=this.responseText;
+//                alert(this.responseText)
+//            }
+//        }
+//        xhr.send(fd);
+//    }
+//alert($);
+    function send1(){
+        var xhr=new XMLHttpRequest();
+        //var fm=document.getElementById('f');
+        var fm=document.querySelector('#f');
+        console.log(fm);
+        var fd=new FormData(fm);
+        console.log(fd);
+        xhr.open('post','./vote4.php',true);
+        xhr.onreadystatechange=function () {
+            if(this.readyState == 4){
+                alert(this.responseText);
+            }
+        }
+        //xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+        xhr.send(fd);
+    }
+
+
+</script>
+</body>
+</html>

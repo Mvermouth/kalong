@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <h1>ajax上存文件</h1>
+    <h2></h2>
+    <div id="zhuan"></div>
+    <form action="up.php" method="post" enctype="multipart/form-data" onsubmit="return ajaxUp()">
+        <p>
+            <input type="file" name="pic">
+        </p>
+        <p><input type="submit"value="ok"></p>
+    </form>
+
+    <!--<iframe src="" frameborder="0"></iframe>-->
+<script>
+    /*
+    * 1.捕捉表单提交动作
+    * 2.创建一个iframe
+    * 3.把表单的target修改为指向iframe
+    * 4.去掉iframe
+    * */
+    function ajaxUp() {
+        var iframe='up'+Math.random();
+        $('<iframe name="'+iframe+'" width="0" height="0" frameborder="0"></iframe>').appendTo('body');
+        $('form:first').attr('target',iframe);
+        $('#zhuan').html('<img src="./b55c012a6059252db2cf8f14379b033b5ab5b968.jpg">');
+        //return false;
+    }
+
+</script>
+    <!--<script>parent.document.querySelector('h2').innerHTML='$res'</script>-->
+</body>
+</html>
