@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>异步原理</title>
+</head>
+<style>
+    .box{
+        width: 200px;
+        height: 200px;
+        background: red;
+    }
+</style>
+<body>
+    <div class="box">
+
+    </div>
+    <p class="z"></p>
+<script>
+    var xhr=creatXML();
+    var pz=document.querySelector('.z');
+    function creatXML(){
+        var xhr=null;
+        if(window.XMLHttpRequest){
+            xhr=new XMLHttpRequest();
+        }else if(window.ActiveXObject){//兼容ie
+            xhr=new ActiveXObject('Microsoft.XMLHTTP');
+        }
+        return xhr;
+    }
+    //console.log(xhr);
+    //console.log(xhr.readyState);
+    xhr.open('POST','htmlshujv.php',true);//同步则为要等待3秒才能出 红色box
+    xhr.onreadystatechange=function () {
+        if(this.readyState==4){
+            var a=eval("("+this.responseText+")");
+            pz.innerHTML=a.name;
+        }
+    }
+    xhr.send(null);
+    //console.log(xhr);
+    //console.log(xhr.readyState);
+</script>
+</body>
+</html>
