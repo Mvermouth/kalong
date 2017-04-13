@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>进度条</title>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<style>
+    .pro{
+        width: 500px;
+        height: 30px;
+        border: 1px solid red;
+    }
+    .pro1{
+        width:0%;
+        height: 100%;
+        background: red;
+    }
+</style>
+<body>
+<input type="file" name="pic" onchange="selfile()" class="pic">
+<div class="infor">
+
+</div>
+<div class="pro">
+    <div class="pro1"></div>
+</div>
+<div class="num">
+    0%
+</div>
+<script>
+    /*
+    * 思路
+    * 1.总大小和已上存大小-》在html有一个上存过程的事件，可以读到这2个信息-》on
+    * 2.在上存过程中不断触发一个函数读取他门的百分比，并更新页面的进度条
+    *
+    * */
+    function selfile() {
+        var fd=new FormData();//创建
+        var pic=document.querySelector('.pic').files[0];//拿到文件对象，
+        //把文件内容追加到表单数据
+        fd.append('pic',pic);
+        //xhr
+        var xhr=new XMLHttpRequest();
+        xhr.open('post','./vote5.php',true);
+        xhr.onreadystatechange=function () {
+            if(this.readyState==4){
+                //alert(this.responseText);
+
+            }
+        }
+        xhr.upload.onprogress=function (ev) {
+            //console.log(ev);
+            var per=ev.loaded/ev.total*100;//百分比
+            console.log(per);
+            $('.pro1').css('width',per+'%');
+            $('.num').html(Math.floor(per)+'%');
+        }
+
+        xhr.send(fd);
+    }
+</script>
+</body>
+</html>

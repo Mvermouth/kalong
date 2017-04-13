@@ -7,3 +7,4 @@
  */
 //print_r($_POST);
 print_r($_POST);
+//echo move_uploaded_file($_POST['pic'],'./images') ? 'ok':'no';

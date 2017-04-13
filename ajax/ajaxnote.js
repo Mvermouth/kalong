@@ -39,3 +39,18 @@ xhr属性详解
 	回调会强行插队在3之后（单线程）
 iframe伪装ajax上存文件
 
+file API->大文件切割上存
+ 		* file API继承自Blob
+        * Blob有slice方法，截取二进制一部分
+        思路
+        	1.截取10M上存，判断有没有截取完毕->while 有就一直切
+
+FormData->new FormData();
+	1.可以从表单获得数据，也可以自己写数据
+	
+进度条
+	ev.loaded/ev.total
+	ev里面的东西
+
+ajax跨域取决于对方服务器的应答
+	对方原意接收远方的ajax请求，可以在header头信息中+head什么什么的

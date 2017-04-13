@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ajax文件上存</title>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+<input type="file" name="pic" onchange="selfile()" class="pic">
+<div class="infor">
+
+</div>
+<script>
+    function selfile() {
+        var fd=new FormData();//创建
+        var pic=document.querySelector('.pic').files[0];//拿到文件对象，
+        //把文件内容追加到表单数据
+       fd.append('pic',pic);
+       //xhr
+        var xhr=new XMLHttpRequest();
+        xhr.open('post','./vote5.php',true);
+        xhr.onreadystatechange=function () {
+            if(this.readyState==4){
+                //alert(this.responseText);
+
+            }
+        }
+        xhr.send(fd);
+
+    }
+</script>
+</body>
+</html>

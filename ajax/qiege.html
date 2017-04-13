@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>大文件切割上存</title>
+</head>
+<body>
+    <h1>大文件切割上存</h1>
+    <input type="file" name="pic" onchange="selfile()" class="pic">
+    <div class="infor">
+
+    </div>
+    <script>
+        /**************************
+        * file API继承自Blob
+        * Blob有slice方法，截取二进制一部分
+        *用while
+        * *************************/
+        function selfile() {
+            const LENGTH=10*1024*1024;//常量 js的
+            var start=0;
+            var end=start+LENGTH;
+            var blob=new Blob();
+            /*
+            *
+            * */
+            var xhr=new XMLHttpRequest();
+
+
+            var pic=document.querySelector('.pic').files[0];//拿到文件对象，
+            //console.log(pic);
+            var picSize=pic.size;
+            while(start<picSize){
+                blob=pic.slice(start,end);
+                fd=new FormData();//打包
+                fd.append('part',blob);
+
+                xhr.upload.onprogress=function(ev){//监听上存触发
+                    //xhr.open('post','bigajax.php',true);
+                    var per=ev.loaded/ev.total*100;
+                    console.log(per);
+
+                }
+
+                xhr.open('post','bigajax.php',false);
+                xhr.send(fd);
+                start=end;
+                end=start+LENGTH;
+            }
+        }
+        
+        
+//        function selfile() {
+//            var fd=new FormData();//创建
+//            var pic=document.querySelector('.pic').files[0];//拿到文件对象，
+//            //把文件内容追加到表单数据
+//            fd.append('pic',pic);
+//            //xhr
+//            var xhr=new XMLHttpRequest();
+//            xhr.open('post','./vote5.php',true);
+//            xhr.onreadystatechange=function () {
+//                if(this.readyState==4){
+//                    //alert(this.responseText);
+//                }
+//            }
+//            xhr.send(fd);
+//
+//        }
+    </script>
+</body>
+</html>

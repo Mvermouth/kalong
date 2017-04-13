@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>fileApi+文件预览</title>
+    <script src="https://cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <input type="file" name="pic" onchange="selfile()" class="pic">
+    <div class="infor">
+
+    </div>
+    <script>
+        function selfile() {
+            var pic=document.querySelector('.pic').files[0];//拿到文件对象，
+            //var infor=$('.infor');
+            var cont=pic.name;//拿到信息
+            $('.infor').text(cont);
+            var img=document.createElement('img');
+            console.log(window.URL.createObjectURL(pic));
+            img.src=window.URL.createObjectURL(pic);
+            document.querySelector('body').appendChild(img);
+        }
+    </script>
+</body>
+</html>
