@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>发送</title>
+</head>
+<style>
+    #room {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        overflow: scroll;
+    }
+</style>
+<body>
+<h1>另一边</h1>
+<!--放信息的-->
+<div id="room">
+
+</div>
+<textarea name="content" id="" cols="30" rows="10"></textarea>
+恢复 <p id="res"></p>
+<input type="button" value="hui复">
+<iframe src="./commet.php" frameborder="0" width="0" height="0"></iframe>
+
+<script>
+    var info = '';
+    function getMsg(msg) {
+        info += msg.pos + '说:';
+        info += msg.content + '<br/>';
+        document.querySelector('#room').innerHTML = info;
+    }
+</script>
+</body>
+</html>

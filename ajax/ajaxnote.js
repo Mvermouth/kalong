@@ -54,3 +54,24 @@ FormData->new FormData();
 
 ajax跨域取决于对方服务器的应答
 	对方原意接收远方的ajax请求，可以在header头信息中+head什么什么的
+
+反向ajax
+	comet反向ajax
+	又叫服务推技术，sever push
+	实时聊天
+		思路，原理
+			1.服务器端不要断开链接，有消息再发送，发完也不断
+			http的chunk传输->有切割分块的意思
+			服务器端也不知道要传输多少length给浏览器，所以每次传一小块
+			2.php用一个死循环始终运行，有相关消息就把消息推倒浏览器上
+comet最简单的模型就是利用php
+聊天功能，用iframe嵌套，然后使用模型，iframe会不断得到服务器推送的消息
+
+
+create table msg(
+    id int unsigned auto_increment primary key,
+    res varchar(100) not null default '',
+    pos varchar(100) not null default '',
+    is_r tinyint unsigned not null default 0,
+    content varchar(100) not null default 0
+)engine myisam charset utf8;
