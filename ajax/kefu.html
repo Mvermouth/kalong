@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>客服端</title>
+    <title>服务端</title>
+
 </head>
 <style>
     #room{
@@ -18,14 +19,63 @@
     <div id="room">
 
     </div>
+    <textarea name="content" id="" cols="30" rows="10" id="c"></textarea><br>
+    回复 <p id="posss"></p>
+    <input type="button" value="回复" onclick="sendMsg()">
     <iframe src="./commet.php" frameborder="0" width="0" height="0"></iframe>
 
+    <script src="./jquery-3.1.0.min.js"></script>
     <script>
         var info='';
+        var posInfo=document.querySelector('#posss');
+        //var xhr=null;
+        var xhr=creatXML();
+        function creatXML(){
+            var xhr=null;
+            if(window.XMLHttpRequest){
+                xhr=new XMLHttpRequest();
+            }else if(window.ActiveXObject){//兼容ie
+                xhr=new ActiveXObject('Microsoft.XMLHTTP');
+            }
+            return xhr;
+        }
+        document.cookie='use=admin';
         function getMsg(msg){
-            info+=msg.res+'说:';
+            //var info='';
+            info+='<span onclick="replay(\''+msg.pos+'\')">'+msg.pos+'</span>'+'说:';
             info+=msg.content+'<br/>';
             document.querySelector('#room').innerHTML=info;
+            //$('info').appendTo($('#room'));
+        }
+        function replay(posname){
+            posInfo.innerHTML=posname;
+        }
+        function sendMsg() {
+            //alert(1);
+            var pos=posInfo.innerHTML;
+            var cont=document.getElementsByTagName('textarea')[0].value;
+            if(pos == ''|| cont == ''){
+                alert('no kong');
+                return;
+            }
+            xhr.open('POST','sendmsg.php',true);
+            xhr.setRequestHeader('content-type','application/x-www-form-urlencoded');
+            xhr.onreadystatechange=function () {
+                    if(this.readyState==4){
+                        if(this.responseText=='ok'){
+                            //var info='';
+                            info+='你对'+pos+'说：'+cont;
+                            info+='<br/>';
+                            document.querySelector('#room').innerHTML=info;
+                            //document.getElementsByTagName('textarea').instances.content.setData("");
+                            $('textarea').val('');
+                            posInfo.innerHTML='';
+                        }else{
+                            alert('插入失败');
+                        }
+                    }
+            }
+            xhr.send('res='+pos+'&content='+cont);
         }
     </script>
 </body>
