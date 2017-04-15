@@ -116,7 +116,11 @@
  * 31.from 子查询
  * 32.exists 
  * 		where跟from都能完成
- * 33.内联查询 
+ * 33.内联查询
+ *
+ * select * from A inner join B on A.aID = B.bID
+ *
+ *
  * 		1.连接起来 inner join
  * 		2.条件 on ??=??
  * 34.左连接
@@ -327,7 +331,8 @@
 		}
 	}	
 
-	 * 
+	 * select * form orderinfo left join ordergoods on (orderinfo.order_sn = ordergoods.order_sn) where ordergoods.order_sn=201704071351;
+	 *
 	 * 
 	 * 
 	 * */
