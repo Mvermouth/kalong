@@ -1,0 +1,44 @@
+body{
+    a{
+        text-decoration: none;
+    }
+    li{
+        list-style: none;
+    }
+    p{
+        padding: 0;
+        margin: 0;
+    }
+//  @font-face{
+//      font-family:FontAwesome;
+//  }
+     position: relative;
+}
+.nav{
+    background: #ec1856;
+    height: 1.05rem;
+    width: 100%;
+    .login{
+        width: 6.88rem;
+        height: 0.47rem;
+        padding-top: 0.14rem;
+        a{
+            float: right;
+        }
+    }
+    .navList{
+        li{
+            width: 0.87rem;
+            float: left;
+            margin-left: 0.14rem;
+        }
+        li:first-of-type{
+            width: 1.32rem;
+        }
+        li:last-of-type{
+            width: 1.18rem;
+        }
+    }
+}
+
+

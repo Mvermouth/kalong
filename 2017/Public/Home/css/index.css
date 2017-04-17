@@ -1,0 +1,30 @@
+body {
+  position: relative; }
+  body a {
+    text-decoration: none; }
+  body li {
+    list-style: none; }
+  body p {
+    padding: 0;
+    margin: 0; }
+
+.nav {
+  background: #ec1856;
+  height: 1.05rem;
+  width: 100%; }
+  .nav .login {
+    width: 6.88rem;
+    height: 0.47rem;
+    padding-top: 0.14rem; }
+    .nav .login a {
+      float: right; }
+  .nav .navList li {
+    width: 0.87rem;
+    float: left;
+    margin-left: 0.14rem; }
+  .nav .navList li:first-of-type {
+    width: 1.32rem; }
+  .nav .navList li:last-of-type {
+    width: 1.18rem; }
+
+/*# sourceMappingURL=index.css.map */

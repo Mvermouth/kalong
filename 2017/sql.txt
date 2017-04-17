@@ -1,0 +1,32 @@
+banner
+上存时间
+是否上价
+是否删除
+图片路径
+套餐id
+
+create table pic(
+pic_id int unsigned auto_increment primary key,
+pic_name varchar(30) not null default '',
+is_on tinyint unsigned not null default 1,
+is_del tinyint unsigned not null default 0,
+img_path varchar(100) not null default '',
+tc_id int unsigned not null default 0,
+area_id int unsigned not null default 0,
+parent_id int unsigned not null default 0,
+time varchar(20) not null default ''
+)engine innodb character set utf8;
+
+
+套餐
+tcid
+tc名字
+parentid
+
+create table tc(
+tc_id int unsigned auto_increment primary key,
+parent_id int unsigned not null default 0,
+tc_name varchar(10) not null default '',
+area_name varchar(20) not null default '',
+area_id int unsigned not null default 0
+)engine innodb character set utf8;
