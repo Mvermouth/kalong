@@ -3,9 +3,11 @@ namespace Admin\Controller;
 use Think\Controller;
 class PicController extends Controller {
     public function picadd(){
-//        print_r($_FILES);
-//        $this->display();
-//        exit;
+        session(array());
+        if(session('name') && session('name')=='vip' ){
+        }else{
+            exit('sb');
+        }
         $picM=D('Admin/Pic');
         $tcM=D('Admin/Tc');
         $this->assign('tctree',$tcM->getTree());

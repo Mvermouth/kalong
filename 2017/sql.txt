@@ -30,3 +30,10 @@ tc_name varchar(10) not null default '',
 area_name varchar(20) not null default '',
 area_id int unsigned not null default 0
 )engine innodb character set utf8;
+
+管理员
+create table vip(
+use_id int unsigned auto_increment primary key,
+u_name varchar(20) not null default '',
+pass varchar(80) not null default ''
+)engine innodb character set utf8;

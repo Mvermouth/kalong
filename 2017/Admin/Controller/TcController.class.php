@@ -3,9 +3,11 @@ namespace Admin\Controller;
 use Think\Controller;
 class TcController extends Controller {
     public function tcadd(){
-//        print_r($_POST);
-//        $this->display();
-//        exit;
+        session(array());
+        if(session('name') && session('name')=='vip' ){
+        }else{
+            exit('sb');
+        }
         $tcM=D('Admin/Tc');
         $this->assign(tctree,$tcM->getTree());
         $this->assign(areaTree,$tcM->areaTree());

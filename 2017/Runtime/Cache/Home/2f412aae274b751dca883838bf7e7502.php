@@ -5,8 +5,8 @@
     <title>Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="/2017/Public/Home/lib/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/2017/Public/home/css/index.css">
     <link rel="stylesheet" href="/2017/Public/Home/lib/swiper/dist/css/swiper.min.css">
+    <link rel="stylesheet" href="/2017/Public/home/css/index.css">
     <script>
         (function (doc, win) {
             var docEl = doc.documentElement,
@@ -26,14 +26,35 @@
         })(document, window);
     </script>
     <style>
+        /*body {*/
+            /*background: #fff;*/
+            /*font-family: Helvetica Neue, Helvetica, Arial, sans-serif;*/
+            /*font-size: 14px;*/
+            /*color:#000;*/
+            /*margin: 0;*/
+            /*padding: 0;*/
+        /*}*/
         .swiper-container {
             width: 100%;
             height: 6rem;
         }
 
-        .swiper-slide {
+        .swiper-container .swiper-slide {
             background-position: center;
             background-size: cover;
+        }
+        .swiper-container1 {
+            width: 100%;
+            padding-top: 10px;
+            padding-bottom: 50px;
+            overflow: hidden;
+        }
+        .swiper-container1 .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 300px;
+            height: 300px;
+
         }
     </style>
 </head>
@@ -74,34 +95,276 @@
 
 <div class="banner">
     <div class="container-fluid" style="padding: 0;">
-        <div class="swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/banner.jpg')"></div>
-                <div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/banner2.jpg')"></div>
-                <div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/banner.jpg')"></div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <?php if(is_array($banner)): foreach($banner as $key=>$b): ?><div class="swiper-slide" style="background-image:url('/2017/Public/.<?php echo ($b[img_path]); ?>')"></div><?php endforeach; endif; ?>
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/banner2.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/banner3.jpg')"></div>-->
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination swiper-pagination-white"></div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next swiper-button-white"></div>
+                    <div class="swiper-button-prev swiper-button-white"></div>
+                </div>
             </div>
-            <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-white"></div>
-            <!-- Add Arrows -->
-            <div class="swiper-button-next swiper-button-white"></div>
-            <div class="swiper-button-prev swiper-button-white"></div>
         </div>
     </div>
 </div>
 
+<div class="picShow">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-0"></div>
+            <div class="col-md-12">
+                <div class="pic1"><img src="/2017/Public/Home/images/pic1.jpg" alt=""></div>
+            </div>
+            <div class="col-md-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-0"></div>
+            <div class="col-md-12">
+                <div class="swiper-container1">
+                    <div class="swiper-wrapper">
+                        <?php if(is_array($new)): foreach($new as $key=>$n): ?><div class="swiper-slide" style="background-image:url('/2017/Public/.<?php echo ($n[img_path]); ?>')"></div><?php endforeach; endif; ?>
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp2.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp3.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp4.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp2.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp3.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp1.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp4.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp5.jpg')"></div>-->
+                        <!--<div class="swiper-slide" style="background-image:url('/2017/Public/Home/images/sp2.jpg')"></div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-0"></div>
+            <div class="row">
+                <div class="col-md-0"></div>
+                <div class="col-md-12 more">
+                    <a href="">show me more  mews & topic &gt;</a>
+                </div>
+                <div class="col-md-0"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="picShow2">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-0"></div>
+            <div class="col-md-12">
+                <div class="pic2"><img src="/2017/Public/Home/images/pic2.jpg" alt=""></div>
+            </div>
+            <div class="col-md-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-12" style="padding: 0">
+                <div class="col-md-3">
+                    <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                    <p>02月客照4</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                    <p>02月客照4</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                    <p>02月客照4</p>
+                </div>
+                <div class="col-md-3">
+                    <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                    <p>02月客照4</p>
+                </div>
+            </div>
+            <!--分开-->
+            <div class="row" style="margin-top: 0.7rem">
+                <div class="col-md-12">
+                    <div class="col-md-3">
+                        <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                        <p>02月客照4</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                        <p>02月客照4</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                        <p>02月客照4</p>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="box"><img src="/2017/Public/Home/images/cust1.jpg" alt=""></div>
+                        <p>02月客照4</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+    <!--fen-->
+<div class="picShow3">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-0"></div>
+            <div class="col-md-12">
+                <div class="pic3"><img src="/2017/Public/Home/images/pic3.jpg" alt=""></div>
+            </div>
+            <div class="col-md-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-8">
+                <div class="shareBox">
+                    <img src="/2017/Public/Home/images/share0.jpg" alt="">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="shareBtn">
+                    <h2>8980</h2>
+                </div>
+                <div class="shareBtn">2</div>
+                <div class="shareBtn">3</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="picShow4">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-0"></div>
+            <div class="col-md-12">
+                <div class="pic4"><img src="/2017/Public/Home/images/pic4.jpg" alt=""></div>
+            </div>
+            <div class="col-md-0"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="loveBox">
+                    <div class="lovepic">
+                        <img src="/2017/Public/Home/images/love1.jpg" alt="">
+                    </div>
+                    <div class="cao" style="background-image:url('/2017/Public/Home/images/cao.png')">
+                    </div>
+                    <div class="fog"></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="loveBox">
+                    <div class="lovepic">
+                        <img src="/2017/Public/Home/images/love1.jpg" alt="">
+                    </div>
+                    <div class="cao" style="background-image:url('/2017/Public/Home/images/cao.png')">
+
+                    </div>
+                    <div class="fog"></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="loveBox">
+                    <div class="lovepic">
+                        <img src="/2017/Public/Home/images/love1.jpg" alt="">
+                    </div>
+                    <div class="cao" style="background-image:url('/2017/Public/Home/images/cao2.png')">
+
+                    </div>
+                    <div class="fog"></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="loveBox">
+                    <div class="lovepic">
+                        <img src="/2017/Public/Home/images/love1.jpg" alt="">
+                    </div>
+                    <div class="cao" style="background-image:url('/2017/Public/Home/images/cao.png')">
+
+                    </div>
+                    <div class="fog"></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="loveBox">
+                    <div class="lovepic">
+                        <img src="/2017/Public/Home/images/love1.jpg" alt="">
+                    </div>
+                    <div class="cao" style="background-image:url('/2017/Public/Home/images/cao2.png')">
+
+                    </div>
+                    <div class="fog"></div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="loveBox">
+                    <div class="lovepic">
+                        <img src="/2017/Public/Home/images/love1.jpg" alt="">
+                    </div>
+                    <div class="cao" style="background-image:url('/2017/Public/Home/images/cao.png')">
+
+                    </div>
+                    <div class="fog"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <script src="/2017/Public/Home/lib/jq/jquery-3.1.0.min.js"></script>
 <script src="/2017/Public/Home/lib/bootstrap/js/bootstrap.min.js"></script>
 <script src="/2017/Public/Home/lib/swiper/dist/js/swiper.js"></script>
 <script>
     var swiper = new Swiper('.swiper-container', {
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
+//        pagination: '.swiper-pagination',
+        paginationClickable: false,
         nextButton: '.swiper-button-next',
         prevButton: '.swiper-button-prev',
-        spaceBetween: 30,
+        spaceBetween: 10,
         autoplay: 5000,
-        effect: 'fade'
+        effect: 'fade',
+        grabCursor : true,
+        loop:true
     });
+    var swiper = new Swiper('.swiper-container1', {
+        //pagination: '.swiper-pagination1',
+        effect: 'coverflow',
+        grabCursor: true,
+        centeredSlides: true,
+        slidesPerView: 'auto',
+        loop : true,
+        autoplay : 3000,
+        coverflow: {
+            rotate: 50,
+            stretch: 0,
+            depth: 100,
+            modifier: 1,
+            slideShadows : true
+        }
+    });
+
+    $(function(){
+        //选你爱效果
+        $('.loveBox').hover(function(){
+            $(this).find('.fog').css('display','none');
+            $(this).find('.lovepic').css('top','-30px');
+            $(this).find('.cao').css('bottom','-10px');
+        },function(){
+            $(this).find('.fog').fadeIn('slow');
+            $(this).find('.lovepic').css('top','0px');
+            $(this).find('.cao').css('bottom','0px');
+        })
+        //cust效果
+        $('.picShow2 .box').hover(function(){
+            $(this).siblings('p').css('width','2.76rem')
+        },function(){
+            $(this).siblings('p').css('width','0rem')
+        })
+        //尊享
+        $('.shareBtn').hover(function(){
+            //alert($(this).index());
+            $(".shareBox img").attr('src',"/2017/Public/Home/images/share"+$(this).index()+".jpg");
+        },function(){
+
+        })
+
+    })
 </script>
 </body>
 </html>

@@ -5,13 +5,10 @@ body{
     li{
         list-style: none;
     }
-    p{
+    p,h1,h2,h3,h4,h5,h6{
         padding: 0;
         margin: 0;
     }
-//  @font-face{
-//      font-family:FontAwesome;
-//  }
      position: relative;
 }
 .nav{
@@ -40,5 +37,105 @@ body{
         }
     }
 }
+.picShow{
+    background: #353535;
+    .pic1{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    a{
+        display: block;
+        color: white;
+        text-align: center;
+    }
+}
+.picShow2{
+    background:#353535;
+    .pic2{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .box{
+        margin-top:0.03rem;
+    }
+    p{
+        color: white;
+        width: 0rem;
+        margin-top: 0.1rem;
+        background: #ec1856;
+        white-space:nowrap;
+        transition: all 1s;
+    }
+}
+.picShow3{
+    background:#353535;
+    .pic3{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    p{
+        color: white;
+        width: 2.76rem;
+        margin-top: 0.1rem;
+    }
+    .shareBox{
+        img{
+            width: 7.43rem;
+            border: 5px solid #ec1856;
+        }
+    }
+    .shareBtn{
+        width: 3.83rem;
+        height: 1.36rem;
+        background: #ec1856;
+        margin-bottom: 0.1rem;
+        margin-left: - 0.2rem;
+    }
+}
+.picShow4{
+    background:#353535;
+    .pic4{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .loveBox{
+        width: 1.82rem;
+        height: 3.85rem;
+        position: relative;
+//      overflow: hidden;
+        .lovepic{
+            position: absolute;
+            top: 0px;
+            transition: all .3s;
+        }
+    }
+    .cao{
+        overflow: hidden;
+        width: 1.82rem;
+        height: 1.90rem;
+        position: absolute;
+        bottom: 0px;
+        z-index: 4;
+        transition: all .3s;
+    }
+    .fog{
+        overflow: hidden;
+        width: 1.82rem;
+        height: 2.49rem;
+        position: absolute;
+        top: 0;
+        z-index: 2;
+        background: rgba(12,12,21,.5);
+    }
+}
+
 
 

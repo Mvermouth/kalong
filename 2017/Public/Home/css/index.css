@@ -4,7 +4,7 @@ body {
     text-decoration: none; }
   body li {
     list-style: none; }
-  body p {
+  body p, body h1, body h2, body h3, body h4, body h5, body h6 {
     padding: 0;
     margin: 0; }
 
@@ -26,5 +26,87 @@ body {
     width: 1.32rem; }
   .nav .navList li:last-of-type {
     width: 1.18rem; }
+
+.picShow {
+  background: #353535; }
+  .picShow .pic1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .picShow a {
+    display: block;
+    color: white;
+    text-align: center; }
+
+.picShow2 {
+  background: #353535; }
+  .picShow2 .pic2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .picShow2 .box {
+    margin-top: 0.03rem; }
+  .picShow2 p {
+    color: white;
+    width: 0rem;
+    margin-top: 0.1rem;
+    background: #ec1856;
+    white-space: nowrap;
+    transition: all 1s; }
+
+.picShow3 {
+  background: #353535; }
+  .picShow3 .pic3 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .picShow3 p {
+    color: white;
+    width: 2.76rem;
+    margin-top: 0.1rem; }
+  .picShow3 .shareBox img {
+    width: 7.43rem;
+    border: 5px solid #ec1856; }
+  .picShow3 .shareBtn {
+    width: 3.83rem;
+    height: 1.36rem;
+    background: #ec1856;
+    margin-bottom: 0.1rem;
+    margin-left: -0.2rem; }
+
+.picShow4 {
+  background: #353535; }
+  .picShow4 .pic4 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .picShow4 .loveBox {
+    width: 1.82rem;
+    height: 3.85rem;
+    position: relative; }
+    .picShow4 .loveBox .lovepic {
+      position: absolute;
+      top: 0px;
+      transition: all .3s; }
+  .picShow4 .cao {
+    overflow: hidden;
+    width: 1.82rem;
+    height: 1.90rem;
+    position: absolute;
+    bottom: 0px;
+    z-index: 4;
+    transition: all .3s; }
+  .picShow4 .fog {
+    overflow: hidden;
+    width: 1.82rem;
+    height: 2.49rem;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    background: rgba(12, 12, 21, 0.5); }
 
 /*# sourceMappingURL=index.css.map */
