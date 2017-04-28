@@ -32,13 +32,25 @@ http.createServer((req,res)=>{
 }).listen(3000,'127.0.0.1');
 
 function getMine(extname){
-	switch(extname){
-		case './html':
-			return 'text/html;charset=UTF-8';
-			break;
-		case './jpg':
-			return 'image/jpeg';
-			break;
+	// switch(extname){
+	// 	case './html':
+	// 		return 'text/html;charset=UTF-8';
+	// 		break;
+	// 	case './jpg':
+	// 		return 'image/jpeg';
+	// 		break;
 
-	}
+	// }
+	fs.readFile('./Mime.json',(err,file)=>{
+		if(err) throw err;
+		//console.log(typeof file);
+		//Sjson=JSON.parse(file);
+		var j=eval('(' + file + ')');
+		console.log(typeof file);
+		if(j.extname){
+			return j.extname;
+		}
+		//console.log(j.xlw);
+		//res.end(file);
+	})
 }
