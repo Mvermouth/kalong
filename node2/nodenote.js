@@ -89,3 +89,29 @@ js别互相引，会死无穷
 
 上存文件 formidable->坚信  你需要的功能 前辈们都已经打包好了
 util 调试工具
+
+路由express 
+
+公式
+get访问->当用get访问这个网址干嘛干嘛 不是ajax的get 区别混淆
+app.get('网址',(req,res)=>{
+
+})
+post
+app.post('',(req,res)=>{
+
+})
+如果想处理这个网址的任何method的请求，那么写all
+app.all("/",function(){
+	
+});
+
+
+RESTful设置
+
+中间介 
+	use 
+	get
+	post
+
+express.static 内置静态方法
