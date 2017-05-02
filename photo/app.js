@@ -6,9 +6,16 @@ const router=require('./controller')
 //模版
 app.set('view engine','ejs');
 //public公共 中间介
-app.use(express.static('./public'));
+app.use(express.static('./public'));//可以用next
+app.use(express.static('./upload'));
 
 app.get('/',router.showIndex);
 //app.get('/',router.showIndex);
 app.get('/:photoName',router.showPhoto);
+//最后use z中间
+app.use((req,res)=>{
+	res.render('err',{
+		"baseUrl":req.pathname
+	});
+})
 app.listen(80,'127.0.0.1');
