@@ -1,4 +1,5 @@
-var file=require('../models/file.js')
+var file=require('../models/file.js');
+const formidable=require('formidable');
 
 //暴露中间价
 
@@ -40,4 +41,35 @@ exports.showPhoto=function(req,res){
 		//res.end();
 	})
 	
+}
+
+//上存
+exports.showUp=function(req,res){
+	// res.render('up');
+	file.getAllPhoto((err,file)=>{
+		if(err){
+			res.writeHead(404,{'Content-type':'text/html;charset=UTF-8'})
+			res.end(err);
+			return;
+		}
+		res.render('up',{
+			'photoBox': file
+		});
+	})
+}
+exports.doUp=function(req,res){
+	if (req.url == '/up' && req.method.toLowerCase() == 'post') {
+    // parse a file upload
+	    var form = new formidable.IncomingForm();
+	    //设置文件上存路径
+	    //form.uploadDir = "./upload";
+	    //执行的时候说明文件已经全收到了
+	    form.parse(req, function(err, fields, files) {
+	    	console.log(fields);
+	    	console.log(files);
+		    res.end('ok');
+	    });
+
+	    return;
+	  }
 }
