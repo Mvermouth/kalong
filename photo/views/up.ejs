@@ -13,7 +13,7 @@
 
   <div class="form-group">
     <label for="exampleInputEmail1">文件</label>
-    <select class="form-control">
+    <select class="form-control" name='wenjianjia'>
       <% for(var i=0;i<photoBox.length;i++){ %>
         <option><%= photoBox[i] %></option>
      <% } %>
@@ -22,7 +22,7 @@
  
   <div class="form-group">
     <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile" multiple="multiple">
+    <input type="file" id="exampleInputFile" multiple="multiple" name='tupian'>
     <p class="help-block">Example block-level help text here.</p>
   </div>
  

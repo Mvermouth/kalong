@@ -1,5 +1,7 @@
 var file=require('../models/file.js');
 const formidable=require('formidable');
+const fs =require('fs');
+const path =require('path');
 
 //暴露中间价
 
@@ -62,11 +64,19 @@ exports.doUp=function(req,res){
     // parse a file upload
 	    var form = new formidable.IncomingForm();
 	    //设置文件上存路径
-	    //form.uploadDir = "./upload";
+	    form.uploadDir = "./upload/temp";
 	    //执行的时候说明文件已经全收到了
 	    form.parse(req, function(err, fields, files) {
-	    	console.log(fields);
-	    	console.log(files);
+	    	if(err){
+	    		throw err;
+	    		return;
+	    	}
+	    	fs.rename("./"+files.tupian.path,"./upload/"+fields.wenjianjia+"/"+files.tupian.name,()=>{
+	    		console.log('wan');
+	    	})
+	    	console.log(fields.wenjianjia);
+	    	console.log(files.tupian.path);
+	    	//console.log(files.tupian.File.path);
 		    res.end('ok');
 	    });
 

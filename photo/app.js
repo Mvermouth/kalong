@@ -1,6 +1,6 @@
 const express= require('express');
 const app=express();
-const router=require('./controller')
+const router=require('./controller');
 //const http=require('http');
 
 //模版
@@ -24,5 +24,6 @@ app.use((req,res)=>{
 	res.render('err',{
 		"baseUrl":req.pathname
 	});
-})
+});
 app.listen(80,'127.0.0.1');
+
