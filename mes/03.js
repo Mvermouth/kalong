@@ -25,14 +25,24 @@ app.post('/tijiao',(req,res)=>{
         //写入数据库
         db.insertOne("mes",{
             "name":fields.name,
-            "tes":fields.tes
-        },(err,res)=>{
+            "tes":fields.tes,
+            "time": new Date()
+        },(err,result)=>{
             if(err){
                 console.log("shibai");
+                res.json({"res":"-1"});
                 return;
             }
             console.log(res);
+            res.json({"res":"1"});
+            res.end("1");
         })
+    })
+})
+//读取；留言
+app.get("/du",(req,res)=>{
+    db.find("mes",{},(err,result)=>{
+        res.json({"res":result});
     })
 })
 
