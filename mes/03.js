@@ -1,5 +1,5 @@
 /**
- * Created by Danny on 2015/9/25 11:35.
+ * Created by Danny on 201/9/25 11:35.
  */
 const express = require("express");
 const app = express();
@@ -14,26 +14,31 @@ app.set("view engine", "ejs");
 app.use(express.static("./public"));
 //显示留言列表
 app.get('/',(req,res)=>{
-    res.render("index");
+    db.getAllCount("mes",(c)=>{
+        console.log(c);
+        res.render("index",{
+            "c":Math.ceil(c/2)
+        });
+    })
 });
 //处理留言
 app.post('/tijiao',(req,res)=>{
     var form = new formidable.IncomingForm();
 
     form.parse(req,(err,fields)=>{
-        console.log(fields.name+fields.tes);
+        //console.log(fields.name+fields.tes);
         //写入数据库
         db.insertOne("mes",{
             "name":fields.name,
             "tes":fields.tes,
-            "time": new Date()
+            "time": new Date().toLocaleString()
         },(err,result)=>{
             if(err){
                 console.log("shibai");
                 res.json({"res":"-1"});
                 return;
             }
-            console.log(res);
+            //console.log(res);
             res.json({"res":"1"});
             res.end("1");
         })
@@ -41,11 +46,20 @@ app.post('/tijiao',(req,res)=>{
 })
 //读取；留言
 app.get("/du",(req,res)=>{
-    db.find("mes",{},(err,result)=>{
+    var page=parseInt(req.query.page);
+
+    db.find("mes",{},{"sort":{"time":-1},"pageamount":2,"page":page},(err,result)=>{
         res.json({"res":result});
     })
-})
 
+})
+//删除
+app.get('/shanchu',(req,res)=>{
+    var id=req.query.id;
+    db.deleteMany("mes",{"_id":ObjectId(id)},(err,result)=>{
+        res.redirect("/");
+    })
+})
 
 
 
