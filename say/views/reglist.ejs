@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/jumbotron.css" rel="stylesheet">
+    <link rel="icon" href="/favicon.ico">
+</head>
+<body>
+<div class="container">
+    <!-- Example row of columns -->
+    <div class="row col-lg-6">
+        <h1>欢迎注册</h1>
+
+        <form>
+            <div class="form-group">
+                <label for="username">用户名</label>
+                <input type="text" class="form-control" id="username" placeholder="用户名，可以是中文，不能和别人重复">
+            </div>
+            <div class="form-group">
+                <label for="password">密码</label>
+                <input type="password" class="form-control" id="password" placeholder="密码，至少6位">
+            </div>
+            <div class="checkbox">
+                <label>
+                    <input type="checkbox"> 我遵守注册规定
+                </label>
+            </div>
+            <button type="button" id="zhuce" class="btn btn-default" >注册</button>
+        </form>
+
+        <!--<div class="alert alert-danger" role="alert" id="cuowukuang">-->
+            <!--用户名被占用，请更换-->
+        <!--</div>-->
+    </div>
+</div>
+
+<script src="/js/jquery-3.1.0.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/underscore-noflect.js"></script>
+
+<script>
+    $("#zhuce").click(function(){
+        $.post("/doreglist",{
+            usename:$("#username").val(),
+            password:$("#password").val(),
+        },(res)=>{
+
+        })
+    })
+</script>
+</body>
+</html>
