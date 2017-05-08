@@ -36,5 +36,9 @@ app.post("/doava",router.doDoava);
 app.get("/cut",router.showCut);
 //执行图片
 app.get("/docut",router.doCut);
+//发说说
+app.post("/post",router.doPost);
+//得到说说
+app.get("/getAll",router.doGetAll);
 
 app.listen(80);

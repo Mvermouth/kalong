@@ -169,6 +169,7 @@ exports.doCut = function (req, res) {
                 res.send("-1");
                 return;
             }
+            //console.log(err);
             //更改数据库当前用户的avatar这个值
             db.updateMany("user", {"usename": req.session.usename}, {
                 $set: {"ava": req.session.avaImg}
@@ -176,4 +177,31 @@ exports.doCut = function (req, res) {
                 res.send("1");
             });
         });
+}
+//发说说
+exports.doPost=function(req,res){
+    var form = new formidable.IncomingForm();
+    var usename=req.session.usename;
+    form.parse(req, (err, fields) => {
+        //写入数据库
+        db.insertOne("poster",{
+            "usename":usename,
+            "content":fields.content,
+            "time":new Date()
+        },(err,result)=>{
+            if(err){
+                res.send("-1");
+                return;
+            }
+            res.send("1");
+        })
+    })
+}
+//得到说说
+exports.doGetAll=function(req,res){
+    var page=req.query.page;
+    db.find("poster",{},{"pageamount":3,"page":page,"sort":{"time":-1}},function(err,result){
+
+        res.json({"r":result});
+    });
 }
