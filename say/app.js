@@ -7,6 +7,7 @@ const router=require("./router/router.js");
 const session = require('express-session');
 const app=express();
 
+
 //session
 app.use(session({
     secret: 'keyboard cat',
@@ -31,5 +32,9 @@ app.post("/dologin",router.doLogin);
 app.get("/avaup",router.showAvaup);
 //处理得到头像页面
 app.post("/doava",router.doDoava);
+//剪裁
+app.get("/cut",router.showCut);
+//执行图片
+app.get("/docut",router.doCut);
 
 app.listen(80);

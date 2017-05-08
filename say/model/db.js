@@ -18,6 +18,29 @@ function _connectDB(callback) {
     });
 }
 
+init();
+
+function init(){
+    //对数据库进行一个初始化
+    _connectDB(function(err, db){
+        if (err) {
+            console.log(err);
+            return;
+        }
+        db.collection('users').createIndex(
+            { "username": 1},
+            null,
+            function(err, results) {
+                if (err) {
+                    console.log(err);
+                    return;
+                }
+                console.log("索引建立成功");
+            }
+        );
+    });
+}
+
 //插入数据
 exports.insertOne = function (collectionName, json, callback) {
     _connectDB(function (err, db) {
@@ -98,6 +121,7 @@ exports.updateMany = function (collectionName, json1, json2, callback) {
     })
 }
 
+//得到总数量
 exports.getAllCount = function (collectionName,callback) {
     _connectDB(function (err, db) {
         db.collection(collectionName).count({}).then(function(count) {

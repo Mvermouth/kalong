@@ -19,10 +19,16 @@
 <!--head-->
 <% include header.ejs %>
 <% if(login){%>
-
 <div class="container">
     <div class="row">
-        <img src="/ava/<%= avaH %>" style="width: 100px">
+        <div class="col-lg-1">
+            <a href="/avaup"><img class="avatar" src="/ava/<%= avaH %>" alt=""/></a>
+        </div>
+        <div class="col-lg-6 col-lg-offset-1">
+            <p><%= usename %></p>
+            <textarea name="content" id="content" cols="80" rows="4"></textarea>
+            <button type="button" id="fabiao" class="btn btn-success">发表说说</button>
+        </div>
     </div>
 </div>
 <% } %>
