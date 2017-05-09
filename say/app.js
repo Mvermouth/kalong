@@ -40,5 +40,11 @@ app.get("/docut",router.doCut);
 app.post("/post",router.doPost);
 //得到说说
 app.get("/getAll",router.doGetAll);
+//得到用户信息
+app.get("/useInfo",router.showUseInfo);
+//得到说说总条数
+app.get("/allSay",router.doAllSay);
+//用户说说
+app.get("/useSay/:usename",router.doUseSay);
 
 app.listen(80);

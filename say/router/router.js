@@ -187,7 +187,7 @@ exports.doPost=function(req,res){
         db.insertOne("poster",{
             "usename":usename,
             "content":fields.content,
-            "time":new Date()
+            "time":new Date().toLocaleString()
         },(err,result)=>{
             if(err){
                 res.send("-1");
@@ -204,4 +204,36 @@ exports.doGetAll=function(req,res){
 
         res.json({"r":result});
     });
+}
+//得到用户信息
+exports.showUseInfo=function(req,res){
+    var usename=req.query.usename;
+    db.find("user",{"usename":usename},function(err,result){
+        // console.log(usename);
+        // res.send(result);
+        //res.json({"u":result});
+        res.json(result);
+    });
+}
+//num
+exports.doAllSay=function (req, res) {
+    db.getAllCount("poster",function(count){
+        res.send(count.toString());
+    });
+}
+//use say
+exports.doUseSay=function(req,res){
+    var usename=req.params.usename;
+    console.log(usename);
+    db.find("poster",{"usename":usename},(err,result)=>{
+       console.log(Array.isArray(result));
+        res.render("usesay", {
+            "login": req.session.login == "1" ? true : false,
+            "usename": req.session.login == "1" ? req.session.usename : "",
+            "active": "login",
+            "useAllsay":result,
+            "auther":usename
+        });
+    })
+
 }

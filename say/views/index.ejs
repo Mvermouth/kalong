@@ -12,13 +12,13 @@
 </head>
 <style>
     body {
-          padding: 0;
-      }
+        padding: 0;
+    }
 </style>
 <body>
 <!--head-->
 <% include header.ejs %>
-<% if(login){%>
+<% if(login){ %>
 <div class="container">
     <div class="row">
         <div class="col-lg-1">
@@ -33,10 +33,17 @@
 </div>
 <div class="container">
     <div class="row">
+        <ul class="pagination">
+            <li><a href='javascript:void(0);'>0</a></li>
+            <li><a href='javascript:void(0);'>1</a></li>
+            <li><a href='javascript:void(0);'>2</a></li>
+        </ul>
+    </div>
+    <div class="row">
 
-            <div class="allsay">
+        <div class="allsay">
 
-            </div>
+        </div>
 
     </div>
 </div>
@@ -50,9 +57,9 @@
 
 <script type="text/template" id="tem">
     <div class="col-md-4 grid">
-        <h2><img width="40" class="avatar" src="/ava/" alt=""/>{{=usename}}说：</h2>
-
-
+        <h2><img width="40" class="ava" src="/ava/{{=ava}}" alt=""/>{{=usename}}说：</h2>
+        <p>{{=content}}</p>
+        <p>{{=time}}</p>
         <p><a class="btn btn-default" href="#" role="button">查看详细</a></p>
     </div>
 </script>
@@ -64,28 +71,126 @@
 <script>
     //var compiled = _.template($("#tem").html());
     var compiled = _.template($("#tem").html());
-    var $allsay=$(".allsay");
+    var $allsay = $(".allsay");
 
-    $("#fa").click(function(){
-        $.post("/post",{
-            "content":$("#content").val()
-        },(res)=>{
-            if(res=="1"){
-                alert("ok");
-            }else{
+    $.get("/allSay", function (result) {
+        var amount = parseInt(result);
+        //var page=0;
+        //console.log(amount);
+        //p(4,amount);
+        //总页数
+        pageamount = Math.ceil(amount / 3);
+//        for (var i = 0; i < pageamount; i++) {
+//            $(".pagination").append("<li><a href='javascript:void(0);'>" + i + "</a></li>");
+//        }
+//        $(".pagination li:first").addClass("active");
+//        //监听
+//        $(".pagination li").click(function () {
+//            var page = $(this).index();
+//            getPage(page);
+//            $(this).addClass("active").siblings().removeClass("active");
+//        });
+        //var bbb=[];
+        $(".pagination li").click(function(){
+
+
+
+            page=parseInt($(this).find("a").html());
+//            for(var i=page-1,j=page+1;(i>=0||j<=pageamount)&&bbb.length<3;){
+//                if(i>=0) {
+//                    bbb.push(i);
+//                    i--;
+//                }
+//                if(j<=pageamount) {
+//                    bbb.push(j);
+//                    j++;
+//                }
+//            }
+//            console.log(bbb);
+            console.log(parseInt(page));
+            //$(this).find("a").html(page+1);
+            p(page,pageamount);
+            getPage(page);
+        })
+
+
+
+    })
+
+    function p(page,amount){
+        //$(".pagination").html("");
+        if(page==0){
+            $(".pagination li:eq(0)").find("a").html(page);
+            $(".pagination li:eq(1)").find("a").html(page+1);
+            $(".pagination li:eq(2)").find("a").html(page+2);
+        }else if(page==(amount-1)){
+            $(".pagination li:eq(0)").find("a").html(page-2);
+            $(".pagination li:eq(1)").find("a").html(page-1);
+            $(".pagination li:eq(2)").find("a").html(page);
+        }else{
+            $(".pagination li:eq(0)").find("a").html(page-1);
+            $(".pagination li:eq(1)").find("a").html(page);
+            $(".pagination li:eq(2)").find("a").html(page+1);
+            $(".pagination li:eq(1)").addClass("active");
+        }
+    }
+
+
+    $("#fa").click(function () {
+        $.post("/post", {
+            "content": $("#content").val()
+        }, (res) => {
+            if (res == "1") {
+                window.location = "/";
+            } else {
                 alert("no");
             }
         })
     })
     //得到说说
-    $.ajax({
-        "url":"/getAll?page=1,",
-        "type":"GET",
-        "success":function(res){
-            console.log(res.r[1].usename);
+    getPage(0);
+    function getPage(page) {
+        $(".allsay").html("");
+        $.ajax({
+            "url": "/getAll?page="+page,
+            "type": "GET",
+            "success": function (res) {
+                //console.log(res.r[1].usename);
+                iterator(0);
+                function iterator(i) {
+                    if (i >= res.r.length) {
+                        return;
+                    }
+                    //for (var i = 0; i < res.r.length; i++) {
+                    //数据绑定
 
-        }
-    })
+//                console.log(typeof html)
+                    $.ajax({
+                        "url": "/useinfo?usename=" + res.r[i].usename,
+                        "type": "GET",
+                        //"async": false,
+                        "success": function (res2) {
+                            //console.log(res2[0].ava);
+                            res.r[i].ava = res2[0].ava;
+                            //console.log(res.r);
+                            var html = compiled({
+                                usename: res.r[i].usename,
+                                content: res.r[i].content,
+                                time: res.r[i].time,
+                                ava: res.r[i].ava
+                            })
+                            $(".allsay").append($(html));
+                        }
+                    })
+                    //console.log(res.r);
+                    iterator(i + 1);
+                    //}
+                }
+
+
+            }
+        })
+    }
 </script>
 
 </body>
