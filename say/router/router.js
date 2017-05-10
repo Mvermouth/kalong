@@ -215,7 +215,7 @@ exports.showUseInfo=function(req,res){
         res.json(result);
     });
 }
-//num
+//say num
 exports.doAllSay=function (req, res) {
     db.getAllCount("poster",function(count){
         res.send(count.toString());
@@ -235,5 +235,22 @@ exports.doUseSay=function(req,res){
             "auther":usename
         });
     })
+}
+//所有注册用户
+exports.showAllUser=function(req,res){
+    if(req.session.login != "1"){
+        res.send("非法加载");
+        return;
+    }
+    db.find("user",{},(err,result)=>{
+        res.render("uselist",{
+            "use":result,
+            "login": req.session.login == "1" ? true : false,
+            "usename": req.session.login == "1" ? req.session.usename : "",
+            "active": "All",
+        })
 
+        // res.json(result);
+        // return;
+    })
 }
