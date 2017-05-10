@@ -33,11 +33,12 @@
 </div>
 <div class="container">
     <div class="row">
-        <ul class="pagination">
-            <li><a href='javascript:void(0);'>0</a></li>
-            <li><a href='javascript:void(0);'>1</a></li>
-            <li><a href='javascript:void(0);'>2</a></li>
-        </ul>
+        <!--<ul class="pagination">-->
+            <!--<li><a href='javascript:void(0);'>0</a></li>-->
+            <!--<li><a href='javascript:void(0);'>1</a></li>-->
+            <!--<li><a href='javascript:void(0);'>2</a></li>-->
+        <!--</ul>-->
+        <div id="example"></div>
     </div>
     <div class="row">
 
@@ -67,55 +68,59 @@
 <script src="/js/jquery-3.1.0.min.js"></script>
 <script src="/js/bootstrap.min.js"></script>
 <script src="/js/underscore-noflect.js"></script>
+<script src="/js/page.js"></script>
 
 <script>
     //var compiled = _.template($("#tem").html());
     var compiled = _.template($("#tem").html());
-    var $allsay = $(".allsay");
-
+//    var $allsay = $(".allsay");
     $.get("/allSay", function (result) {
-        var amount = parseInt(result);
-        //var page=0;
-        //console.log(amount);
-        //p(4,amount);
-        //总页数
-        pageamount = Math.ceil(amount / 3);
-//        for (var i = 0; i < pageamount; i++) {
-//            $(".pagination").append("<li><a href='javascript:void(0);'>" + i + "</a></li>");
-//        }
-//        $(".pagination li:first").addClass("active");
-//        //监听
-//        $(".pagination li").click(function () {
-//            var page = $(this).index();
+       var amount = parseInt(result);
+       pageamount = Math.ceil(amount / 3);
+//        $(".pagination li").click(function(){
+//            page=parseInt($(this).find("a").html());
+//            console.log(parseInt(page));
+//            p(page,pageamount);
 //            getPage(page);
-//            $(this).addClass("active").siblings().removeClass("active");
-//        });
-        //var bbb=[];
-        $(".pagination li").click(function(){
+//        })
+//bt
+            var options = {
+        currentPage: 1,
+        totalPages:pageamount,
+        numberOfPages:5,
+        onPageChanged:function(event){
+            console.log(event);
+        },
+        onPageClicked:function(event, originalEvent, type,page){
+//            $.get("a.php?id="+page,function(res){
+//
+//            })
+            getPage(page)
+        }
+    }
 
-
-
-            page=parseInt($(this).find("a").html());
-//            for(var i=page-1,j=page+1;(i>=0||j<=pageamount)&&bbb.length<3;){
-//                if(i>=0) {
-//                    bbb.push(i);
-//                    i--;
-//                }
-//                if(j<=pageamount) {
-//                    bbb.push(j);
-//                    j++;
-//                }
-//            }
-//            console.log(bbb);
-            console.log(parseInt(page));
-            //$(this).find("a").html(page+1);
-            p(page,pageamount);
-            getPage(page);
-        })
-
+    $('#example').bootstrapPaginator(options);
 
 
     })
+
+
+//    var options = {
+//        currentPage: 1,
+//        totalPages: 10,
+//        numberOfPages:5,
+//        onPageChanged:function(event){
+//            console.log(event);
+//        },
+//        onPageClicked:function(event, originalEvent, type,page){
+//            $.get("a.php?id="+page,function(res){
+//
+//            })
+//        }
+//    }
+//
+//    $('#example').bootstrapPaginator(options);
+
 
     function p(page,amount){
         //$(".pagination").html("");

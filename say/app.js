@@ -46,5 +46,7 @@ app.get("/useInfo",router.showUseInfo);
 app.get("/allSay",router.doAllSay);
 //用户说说
 app.get("/useSay/:usename",router.doUseSay);
+//所有成员
+app.get("/allUser",router.showAllUser);
 
 app.listen(80);
