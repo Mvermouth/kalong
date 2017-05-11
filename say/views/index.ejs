@@ -11,8 +11,31 @@
     <title>Document</title>
 </head>
 <style>
-    body {
+    body,h1 {
         padding: 0;
+        margin: 0;
+    }
+    .banner{
+        width: 100%;
+        height: 769px;
+        overflow:hidden;
+    }
+    .navbar{
+        margin-bottom: 0px;
+    }
+    .b{
+        background: url("images/timg.jpg");
+        width:1920px; position:relative; left:50%; margin-left:-960px;
+        height: 769px;
+    }
+    h1{
+        text-align: center;
+        padding-top: 20%;
+        font-size:50px;
+        color: white;
+    }
+    .pagination li{
+        cursor: pointer;
     }
 </style>
 <body>
@@ -49,9 +72,11 @@
     </div>
 </div>
 <% }else{ %>
-<div class="container">
+<div class="container banner">
     <div class="row">
-        <h1>welcome!</h1>
+        <div class="b">
+            <h1>welcome!</h1>
+        </div>
     </div>
 </div>
 <% } %>
@@ -95,7 +120,7 @@
 //            $.get("a.php?id="+page,function(res){
 //
 //            })
-            getPage(page)
+            getPage(page-1)
         }
     }
 
