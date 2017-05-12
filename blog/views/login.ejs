@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/jumbotron.css" rel="stylesheet">
+</head>
+<style>
+    #tips, #successTips {
+        display: none;
+    }
+
+    body {
+        padding: 0;
+    }
+</style>
+<body>
+<div class="container">
+    <div class="row" style="width:40%">
+        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+            <h1>登陆</h1>
+            <form>
+                <div class="form-group">
+                    <label for="username">帐号</label>
+                    <input type="text" class="form-control" id="username" placeholder="username" name="username">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="Password" name="password">
+                </div>
+
+                <button type="button" class="btn btn-info" id="login">Submit</button>
+            </form>
+            <div class="alert alert-danger" role="alert" id="tips">
+                撒币
+            </div>
+            <div class="alert alert-success" role="alert" id="successTips">登陆成功！立刻为你跳转</div>
+        </div>
+    </div>
+</div>
+
+
+<script src="/js/jquery-3.1.0.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/underscore-noflect.js"></script>
+<script src="/js/page.js"></script>
+<script>
+    $("#login").click(function () {
+        if ($("#username").val() == "" || $("#password").val() == "") {
+            $("#tips").text("不能为空");
+            $("#tips").fadeIn("slow");
+            return;
+        }
+
+        $.post("/dologin", {
+            usename: $("#username").val(),
+            password: $("#password").val(),
+        }, (res) => {
+            if(res == "1"){
+                $("#tips").fadeOut("fast");
+                $("#successTips").fadeIn("slow");
+                setTimeout(function(){window.location="/write";},1000);
+            }else{
+                $("#tips").fadeIn("slow");
+            }
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/jumbotron.css" rel="stylesheet">
+</head>
+<body>
+    <h1>发表</h1>
+    <div class="container">
+        <div class="row">
+            <form action="" method="post" style="width: 40%">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" class="form-control" id="title" name="title" placeholder="title">
+                </div>
+                <div class="form-group">
+                    <textarea class="form-control" id="content" name="content" rows="3"></textarea>
+                </div>
+                <button type="button" class="btn btn-success" id="sub">Submit</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+    <script src="/js/jquery-3.1.0.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/underscore-noflect.js"></script>
+    <script src="/js/page.js"></script>
+    <script>
+       var $title=$("#title").val();
+       var $content=$("#content").val();
+       $("#sub").click(function () {
+          $.post("/doWrite",{title:$("#title").val(),content:$("#content").val()},function(res){
+                if(res=="1"){
+                    window.location="/";
+                }
+          })
+       })
+    </script>
+</body>
+</html>
