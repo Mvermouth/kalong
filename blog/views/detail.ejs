@@ -13,11 +13,13 @@
 <div class="container">
     <div class="row">
         <h1><%= r[0].title %></h1>
-        <p><%= r[0].content %></p>
-        <p>评论</p>
-        <% for(var i=0;i<r[0].comments.length;i++){%>
-            <p><%= r[0].comments[i].body %></p>
+        <p class="con"><%- r[0].content %></p>
+        <h2>评论:</h2>
+        <div class="comments">
+        <% for(var i=r[0].comments.length;i>0;i--){%>
+            <p><%= r[0].comments[i-1].body %></p>
         <% } %>
+        </div>
         <form action="" method="post" style="width: 40%">
             <div class="form-group">
                 <input type="hidden" name='id' id="id" value="<%= r[0]._id %>">
@@ -39,7 +41,10 @@
     <script>
         $("#sub").click(function () {
             $.post("/doComments",{id:$("#id").val(),comments:$("#comments").val()},function(res){
-
+                if(res=="1"){
+                    $(".comments").prepend($("#comments").val());
+                    $("#comments").val("");
+                }
             })
         })
     </script>
