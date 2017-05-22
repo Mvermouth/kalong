@@ -21,6 +21,10 @@ app.get("/detail",router.showDetail);
 app.post("/doComments",router.doComments);
 app.get("/login",router.showLogin);
 app.post("/dologin",router.doLogin);
+app.get("/all",router.showAll);
+app.post("/one",router.showOne);
+app.post("/all",router.showPage);
+app.get("/allpage",router.showAllPage);
 
 
 

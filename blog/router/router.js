@@ -20,8 +20,11 @@ exports.showIndex = function (req, res) {
                     "f":result[0]
         })
     })
-
-
+}
+exports.showOne=function (req, res) {
+    Blog.find().sort({_id:"-1"}).exec((err,result)=>{
+       res.send(result[0]);
+    })
 }
 exports.showWrite = function (req, res) {
     if(!req.session.login||req.session.login !="1"){
@@ -76,6 +79,7 @@ exports.doComments=function (req, res) {
            //     console.log("评论成功")
            //     res.end();
            // })
+            res.send("1");
         })
         console.log(comment);
         //res.end();
@@ -115,5 +119,30 @@ exports.doLogin=function (req, res) {
             // }
            res.end();
         })
+    })
+}
+exports.showAll=function (req, res) {
+    Blog.find().sort({_id:"-1"}).exec((err,result)=>{
+        console.log(result);
+        res.render("all",{
+            "r":result,
+        })
+    })
+}
+exports.showPage=function (req, res) {
+    //条数
+    var t=3;
+    //页数
+    var page= req.query.page;
+    var skip=page*t;
+    Blog.find().sort({_id:"-1"}).limit(t).skip(skip).exec((err,result)=>{
+        console.log(result);
+        res.send(result);
+    })
+}
+exports.showAllPage=function (req, res) {
+    Blog.find().sort({_id:"-1"}).exec((err,result)=>{
+        console.log(result.length);
+       res.send(result.length.toString());
     })
 }

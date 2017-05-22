@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/jumbotron.css" rel="stylesheet">
+    <script>
+        (function (doc, win) {
+            var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    if (clientWidth >= 640) {
+                        docEl.style.fontSize = '100px';
+                    } else {
+                        docEl.style.fontSize = 100 * (clientWidth / 640) + 'px';
+                    }
+                };
+            if (!doc.addEventListener) return;
+            win.addEventListener(resizeEvt, recalc, false);
+            doc.addEventListener('DOMContentLoaded', recalc, false);
+        })(document, window);
+    </script>
+</head>
+<style>
+    body, h1, h5 {
+        padding: 0;
+        margin: 0;
+        /*background: #ccc;*/
+    }
+
+    a, a:hover {
+        text-decoration: none;
+    }
+
+    .navb {
+        margin-top: 0.8rem;
+        width: 3rem;
+    }
+</style>
+<body>
+<!--<div class="container navb">-->
+    <!--<div class="row">-->
+
+        <!--</ul>-->
+    <!--</div>-->
+<!--</div>-->
+<div class="container navb">
+    <div class="row">
+        <div class="allsay">
+            <ul class="list-group k">
+            </ul>
+        </div>
+
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div id="example"></div>
+    </div>
+</div>
+
+<script type="text/template" id="tem">
+    <li class="list-group-item"><a href="/detail?id={{=id}}">{{=title}}</a></li>
+</script>
+
+<script src="/js/jquery-3.1.0.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/underscore-noflect.js"></script>
+<script src="/js/page.js"></script>
+<script>
+    //    $.post("/all?page=0",function(res){
+    //        console.log(res);
+    //    })
+    var compiled = _.template($("#tem").html());
+    var html = "";
+    $.get("/allpage", function (result) {
+        var amount = parseInt(result);
+        pageamount = Math.ceil(amount / 3);
+        var options = {
+            currentPage: 1,
+            totalPages: pageamount,
+            numberOfPages: 5,
+            onPageChanged: function (event) {
+                console.log(event);
+            },
+            onPageClicked: function (event, originalEvent, type, page) {
+                getPage(page - 1)
+            }
+        }
+        $('#example').bootstrapPaginator(options);
+    })
+    getPage(0);
+    function getPage(page) {
+        $(".list-group").empty();
+        html="";
+        $.ajax({
+            "url": "/all?page=" + page,
+            "type": "POST",
+            "success": function (res) {
+                console.log(res);
+                for (var i = 0; i < res.length; i++) {
+                    html += compiled({
+                        id: res[i]._id,
+                        title: res[i].title,
+                    })
+                }
+                console.log(html);
+                $(".list-group").html("");
+                $(".allsay .list-group").append($(html));
+            }
+        })
+    }
+</script>
+</body>
+</html>
