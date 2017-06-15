@@ -13,16 +13,18 @@
     <button @click="three">历程</button>
     <button @click="four">自己</button>
 
-    <router-link to="vx/style/1">日记</router-link>
-    <router-link to="vx/style/2">感悟</router-link>
-    <router-link to="vx/style/3">历程</router-link>
-    <router-link to="vx/style/4">自己</router-link>
+    <router-link to="/vx/style/1">日记</router-link>
+    <router-link to="/vx/style/2">感悟</router-link>
+    <router-link to="/vx/style/3">历程</router-link>
+    <router-link to="/vx/style/4">自己</router-link>
     <br>
     <router-link to="1">日记</router-link>
     <router-link to="2">感悟</router-link>
     <router-link to="3">历程</router-link>
     <router-link to="4">自己</router-link>
+    <transition name="fade">
       <router-view class="s"></router-view>
+    </transition>
   </div>
 </template>
 
@@ -111,10 +113,10 @@
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-  /*.fade-enter-active, .fade-leave-active {*/
-  /*transition: opacity 1s*/
-  /*}*/
-  /*.fade-enter, .fade-leave-to !* .fade-leave-active in <2.1.8 *! {*/
-  /*opacity: 0*/
-  /*}*/
+  .fade-enter-active, .fade-leave-active {
+  transition: opacity 1s
+  }
+  .fade-enter, .fade-leave-to /* .fade-leave-active in <2.1.8 */ {
+  opacity: 0
+  }
 </style>

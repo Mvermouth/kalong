@@ -1,10 +1,15 @@
 <template>
   <div class="home">
+    <el-row :gutter="2">
+
     <h1>Vermouth</h1>
+      <el-col  :lg="12">
     <div class="wenzhang">
       <h3 style="text-align: center">{{newEst.title}}</h3>
       <div class="con"><div v-html="newEst.content"></div></div>
     </div>
+      </el-col>
+        <el-col  :lg="11">
     <div class="zuiin wow pulse">
       <el-table
         :data="lastEst"
@@ -38,8 +43,8 @@
       <textarea id="" cols="50" rows="10" class="fuck" v-model="textarea"  placeholder="请输入评论"></textarea>
       <el-button type="success" class="okBtn" @click="comment">提交评论</el-button>
     </div>
-
-
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -122,19 +127,24 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .home {
-    width: 89%;
+    width: 78%;
     height: 930px;
+    /*padding:20px;*/
     /*background: url("../../static/images/bg.jpg")no-repeat;*/
     /*background-size:100%;*/
     background: rgba(0,0,0,.5);
   }
+  .el-col{
+    /*width: 100%;*/
+  }
 
   .wenzhang {
-    position: absolute;
-    top: 50px;
-    left: 300px;
-    width: 550px;
-    height: 500px;
+    /*position: absolute;*/
+    /*top: 50px;*/
+    /*left: 300px;*/
+    /*width: 550px;*/
+    /*height: 500px;*/
+    margin: 20px;
   }
 
   .con {
@@ -146,17 +156,17 @@
   }
 
   .zuiin {
-    position: absolute;
-    top: 250px;
-    right: 160px;
-    width: 750px;
-    height: 500px;
+    /*position: absolute;*/
+    /*top: 250px;*/
+    /*right: 160px;*/
+    /*width: 750px;*/
+    /*height: 500px;*/
   }
   .box{
-    width: 400px;
-    position: absolute;
-    top: 500px;
-    right: 160px;
+    /*width: 400px;*/
+    /*position: absolute;*/
+    /*top: 500px;*/
+    /*right: 160px;*/
   }
   .okBtn{
     margin-top:20px;

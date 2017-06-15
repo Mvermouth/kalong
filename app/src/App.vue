@@ -1,6 +1,7 @@
 <template>
   <div id="app">
-    <el-col :span="4" class="nav">
+    <el-row :gutter="5">
+    <el-col :span="5" class="nav">
       <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" theme="dark" router="true">
         <el-menu-item index="/">Home</el-menu-item>
         <el-menu-item index="/art/all">Article</el-menu-item>
@@ -13,8 +14,11 @@
       </el-menu>
     </el-col>
     <!--<transition name="fade">-->
-      <router-view class="v"></router-view>
+      <!--<el-col :span="15" class="nav">-->
+        <router-view class="v"></router-view>
+      <!--</el-col>-->
     <!--</transition>-->
+    </el-row>
   </div>
 </template>
 
@@ -44,19 +48,20 @@
   }
 
   #app {
-    width: 1920px;
+    width: 100%;
     height: 100%;
   }
 
   .nav {
     height: 930px;
-    width: 10%;
+    /*width: 20%;*/
   }
 
   .el-menu-vertical-demo{
     height: 100%;
   }
   .v{
+    /*width: 78%;*/
     float: left;
 
   }

@@ -14,7 +14,7 @@
     </div>
       <br>
       <div style="width: 60%;" class="wangEdito1r">
-        <div id="article" style="height: 180px">
+        <div id="editor" style="height: 180px">
 
         </div>
         <br>
@@ -29,6 +29,8 @@
 <script>
   import WangEditor from 'wangeditor'
   import axios from "axios"
+//  var E = require('wangeditor')  // 使用 npm 安装
+//  var E = require('/wangEditor.min.js')  // 使用下载的源码
   //  var editor = new WangEditor('div1');
   //  editor.create();
   console.log($)
@@ -62,13 +64,15 @@
     },
     mounted(){
       var self = this;
-      var editor = new wangEditor('article');
-      editor.create();
+      var editor = new WangEditor('#editor')
+      editor.create()
+//      var editor = new wangEditor('article');
+//      editor.create();
 //      console.log(document.cookie)
     },
     methods: {
       getContent(){
-        var aaa = document.querySelector("#article")
+        var aaa = document.querySelector("#editor")
         console.log(aaa.innerHTML + this.title)
         axios.post('http://localhost/doWrite', {
           title: this.title,

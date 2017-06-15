@@ -1,5 +1,7 @@
 <template>
   <div class="login">
+    <el-row :gutter="0">
+      <el-col  :lg="24">
     <h1>Login</h1>
     <!--<div v-if="l">-->
       <!--<input type="text" name="name" id="name" v-model="name">-->
@@ -21,6 +23,8 @@
       <el-button type="success" class="okBtn" @click="login">我写完拉</el-button>
       <!--<button class="ok" @click="login">ok</button>-->
     </div>
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -102,10 +106,11 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .login{
-    width:89%;
+    width:78%;
     height: 930px;
     background: url("../../static/images/bg.jpg")no-repeat;
-    background-size:100%;
+    overflow: hidden;
+    /*background-size:100%;*/
   }
   .log{
     width: 400px;
