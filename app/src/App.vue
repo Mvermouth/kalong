@@ -15,7 +15,9 @@
     </el-col>
     <!--<transition name="fade">-->
       <!--<el-col :span="15" class="nav">-->
+      <transition name="fade-out">
         <router-view class="v"></router-view>
+      </transition>
       <!--</el-col>-->
     <!--</transition>-->
     </el-row>
@@ -71,4 +73,15 @@
   /*.fade-enter, .fade-leave-to !* .fade-leave-active in <2.1.8 *! {*/
     /*opacity: 0*/
   /*}*/
+  .fade-out-enter-active, .fade-out-leave-active {
+    transition: all .5s
+  }
+  .fade-out-enter {
+    opacity: 0;
+    transform: translateY(400px);
+  }
+  .fade-out-leave-active{
+    opacity: 0;
+    transform: translateY(-400px);
+  }
 </style>

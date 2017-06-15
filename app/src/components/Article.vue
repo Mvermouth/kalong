@@ -1,5 +1,7 @@
 <template>
   <div class="article">
+    <el-row>
+      <el-col  :xs="24" :lg="15">
     <h1>i am article</h1>
     <div class="zuiin">
     <el-table
@@ -31,6 +33,8 @@
       @current-change="currentChange">
     </el-pagination>
     <router-view></router-view>
+      </el-col>
+    </el-row>
   </div>
 </template>
 <script>
@@ -84,10 +88,10 @@
 <style scoped>
   .article{
     position: relative;
-    width:89%;
+    width:78%;
     height: 930px;
     background: url("../../static/images/bg.jpg")no-repeat;
-    background-size:100%;
+    /*background-size:100%;*/
   }
   li {
     cursor: pointer;
@@ -95,8 +99,8 @@
   }
   .pagina{
     position: absolute;
-    top: 300px;
-    left: 500px;
+    /*top: 300px;*/
+    /*left: 500px;*/
   }
   .list{
     position: absolute;
@@ -105,9 +109,9 @@
   }
   .zuiin {
     position: absolute;
-    top: 250px;
-    right: 160px;
-    width: 750px;
+    /*top: 250px;*/
+    /*right: 160px;*/
+    /*width: 750px;*/
     height: 500px;
   }
 </style>

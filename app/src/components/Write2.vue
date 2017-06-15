@@ -1,5 +1,7 @@
 <template>
   <div class="w2">
+    <el-row>
+      <el-col  :lg="15">
     <h1>Write</h1>
     <div v-if="aa"> <div class="box">
       <el-input v-model="title" placeholder="请输入标题"></el-input>
@@ -13,8 +15,8 @@
       </el-select>
     </div>
       <br>
-      <div style="width: 60%;" class="wangEdito1r">
-        <div id="editor" style="height: 180px">
+      <div  class="wangEdito1r">
+        <div id="editor" >
 
         </div>
         <br>
@@ -22,7 +24,8 @@
         <el-button type="success" class="okBtn" @click="getContent">我写完拉</el-button>
       </div></div>
     <div v-else><p>冒牌</p></div>
-
+      </el-col>
+    </el-row>
   </div>
 </template>
 
@@ -107,14 +110,14 @@
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
   .w2{
-    width:89%;
+    width:78%;
     height: 930px;
     background: url("../../static/images/bg.jpg")no-repeat;
-    background-size:100%;
+    /*background-size:100%;*/
   }
   .wangEdito1r {
-    width: 60%;
-    margin-left: 300px;
+    /*width: 60%;*/
+    /*margin-left: 300px;*/
   }
 
   .box {
