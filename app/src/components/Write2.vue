@@ -112,7 +112,7 @@
   .w2{
     width:78%;
     height: 930px;
-    background: url("../../static/images/bg.jpg")no-repeat;
+    /*background: url("../../static/images/bg.jpg")no-repeat;*/
     /*background-size:100%;*/
   }
   .wangEdito1r {

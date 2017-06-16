@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-row :gutter="5">
+    <el-row :gutter="8">
     <el-col :span="5" class="nav">
       <el-menu default-active="2" class="el-menu-vertical-demo" @open="handleOpen" @close="handleClose" theme="dark" router="true">
         <el-menu-item index="/">Home</el-menu-item>
@@ -44,7 +44,10 @@
     padding: 0;
     margin: 0;
   }
-
+body{
+  overflow-y:hidden;
+  overflow-x:hidden;
+}
   li {
     list-style: none;
   }
@@ -52,10 +55,13 @@
   #app {
     width: 100%;
     height: 100%;
+    background: rgba(7,17,27,1);
   }
-
+  .el-menu--dark{
+    background: rgba(7,17,27,0.95);
+  }
   .nav {
-    height: 930px;
+    height: 1030px;
     /*width: 20%;*/
   }
 

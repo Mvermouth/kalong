@@ -8,20 +8,20 @@
     <!--</ul>-->
     <!--<p>{{apii}}</p>-->
     <!--<p>{{xixi}}</p>    -->
-    <button @click="one">日记</button>
-    <button @click="two">感悟</button>
-    <button @click="three">历程</button>
-    <button @click="four">自己</button>
+    <!--<button @click="one">日记</button>-->
+    <!--<button @click="two">感悟</button>-->
+    <!--<button @click="three">历程</button>-->
+    <!--<button @click="four">自己</button>-->
 
     <router-link to="/vx/style/1">日记</router-link>
     <router-link to="/vx/style/2">感悟</router-link>
     <router-link to="/vx/style/3">历程</router-link>
     <router-link to="/vx/style/4">自己</router-link>
-    <br>
-    <router-link to="1">日记</router-link>
-    <router-link to="2">感悟</router-link>
-    <router-link to="3">历程</router-link>
-    <router-link to="4">自己</router-link>
+    <!--<br>-->
+    <!--<router-link to="1">日记</router-link>-->
+    <!--<router-link to="2">感悟</router-link>-->
+    <!--<router-link to="3">历程</router-link>-->
+    <!--<router-link to="4">自己</router-link>-->
     <transition name="fade">
       <router-view class="s"></router-view>
     </transition>
