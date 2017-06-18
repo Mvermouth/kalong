@@ -1,18 +1,20 @@
 <template>
   <div class="w2">
     <el-row>
+      <el-col :lg="8">
+        <el-select v-model="value4" clearable placeholder="请选择" class="sel">
+          <el-option
+            v-for="item in options"
+            :key="item.value"
+            :label="item.label"
+            :value="item.value">
+          </el-option>
+        </el-select>
+      </el-col>
       <el-col  :lg="15">
     <h1>Write</h1>
     <div v-if="aa"> <div class="box">
       <el-input v-model="title" placeholder="请输入标题"></el-input>
-      <el-select v-model="value4" clearable placeholder="请选择">
-        <el-option
-          v-for="item in options"
-          :key="item.value"
-          :label="item.label"
-          :value="item.value">
-        </el-option>
-      </el-select>
     </div>
       <br>
       <div  class="wangEdito1r">
@@ -25,6 +27,7 @@
       </div></div>
     <div v-else><p>冒牌</p></div>
       </el-col>
+
     </el-row>
   </div>
 </template>
@@ -76,10 +79,10 @@
     methods: {
       getContent(){
         var aaa = document.querySelector("#editor")
-        console.log(aaa.innerHTML + this.title)
+        console.log(aaa.innerText + this.title)
         axios.post('http://localhost/doWrite', {
           title: this.title,
-          content:aaa.innerHTML,
+          content:aaa.innerText,
           style:this.value4
         })
           .then(function (res) {
@@ -123,5 +126,8 @@
   .box {
     width: 300px;
     margin-left: 60px;
+  }
+  .sel{
+    margin-top:3rem;
   }
 </style>

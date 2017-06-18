@@ -125,6 +125,7 @@
     width:79%;
     height: 1030px;
     background: url("../../static/images/bg1.jpg")no-repeat;
+    background-position: bottom;
     overflow: hidden;
     /*background: rgba(7,17,27,0.95);*/
     /*background-size:100%;*/

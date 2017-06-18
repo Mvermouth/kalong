@@ -1,30 +1,9 @@
 <template>
   <div class="article">
+
     <el-row>
       <el-col  :xs="24" :lg="15">
     <h1>i am article</h1>
-    <!--<div class="zuiin">-->
-    <!--<el-table-->
-      <!--:data="titles"-->
-      <!--style="width: 100%;">-->
-      <!--<el-table-column-->
-        <!--prop="title"-->
-        <!--label="标题"-->
-        <!--width="540">-->
-      <!--</el-table-column>-->
-      <!--<el-table-column label="操作">-->
-        <!--<template scope="scope">-->
-          <!--<el-button-->
-            <!--size="small"-->
-            <!--@click="handleEdit(scope.$index, scope.row)">-->
-
-            <!--查看-->
-
-          <!--</el-button>-->
-        <!--</template>-->
-      <!--</el-table-column>-->
-    <!--</el-table>-->
-<!--</div>-->
         <div v-for="t in titles">
         <div class="line">
           <router-link :to="'/article/'+t._id">{{t.title}}</router-link>
@@ -40,6 +19,7 @@
     <router-view></router-view>
       </el-col>
     </el-row>
+
   </div>
 </template>
 <script>
@@ -97,8 +77,16 @@
     height: 1030px;
     overflow: hidden;
     background: url("../../static/images/bg2.jpg")no-repeat;
+    background-position: bottom;
     /*background-size:100%;*/
   }
+  /*.bg2{*/
+    /*background: url("../../static/images/bg2.jpg")no-repeat;*/
+    /*width: 1920px;*/
+    /*position: relative;*/
+    /*left: 50%;*/
+    /*margin-left: -960px;*/
+  /*}*/
   li {
     cursor: pointer;
     width: 200px;
